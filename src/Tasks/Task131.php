@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/palindrome-partitioning/submissions/919505717/
- * 65.52/20.69.
+ * 58.62/44.83.
  */
 final class Task131
 {
@@ -15,19 +15,11 @@ final class Task131
      */
     public function partition(string $s): array
     {
-        return $this->process($s);
-    }
-
-    /**
-     * @return array<string[]>
-     */
-    private function process(string $s): array
-    {
         $result = [];
 
         for ($i = 1; $i <= strlen($s); $i++) {
-            foreach ($this->find($s, $i) as $tmp) {
-                $result[] = $tmp;
+            foreach ($this->find($s, $i) as $item) {
+                $result[] = $item;
             }
         }
 
@@ -35,44 +27,23 @@ final class Task131
     }
 
     /**
-     * @return array<string[]>
+     * @return iterable<string[]>
      */
-    private function find(string $s, int $i): array
+    private function find(string $s, int $i): iterable
     {
-        if (empty($s)) {
-            return [];
-        }
-
         $substring = substr($s, 0, $i);
 
-        if (!$this->isPolindrom($substring)) {
-            return [];
+        if ($substring !== strrev($substring)) {
+            return;
         }
 
-        $next = substr($s, $i, strlen($s) - $i);
-
-        if (empty($next)) {
-            return [[$substring]];
+        if (strlen($s) === $i) {
+            yield [$substring];
+            return;
         }
 
-        $result = [];
-        foreach ($this->process($next) as $group) {
-            $result[] = [$substring, ...$group];
+        foreach ($this->partition(substr($s, $i, strlen($s) - $i)) as $group) {
+            yield [$substring, ...$group];
         }
-
-        return $result;
-    }
-
-    private function isPolindrom(string $s): bool
-    {
-        while (($len = strlen($s)) > 1) {
-            if ($s[0] !== $s[$len - 1]) {
-                return false;
-            }
-
-            $s = substr($s, 1, $len - 2);
-        }
-
-        return true;
     }
 }
