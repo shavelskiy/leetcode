@@ -50,12 +50,12 @@ final class Task131
         }
 
         $next = substr($s, $i, strlen($s) - $i);
-        $result = [];
 
         if (empty($next)) {
             return [[$substring]];
         }
 
+        $result = [];
         foreach ($this->process($next) as $group) {
             $result[] = [$substring, ...$group];
         }
