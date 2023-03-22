@@ -1,5 +1,11 @@
 #!/usr/bin/make
 
+start:
+	docker-compose up -d
+
+stop:
+	docker-compose down
+
 install:
 	composer install
 
@@ -16,3 +22,6 @@ phpunit:
 	composer phpunit
 
 tests: check-autoload php-fixer psalm phpunit
+
+db:
+	docker-compose exec db psql -Upostgres
