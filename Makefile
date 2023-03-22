@@ -15,4 +15,4 @@ psalm:
 phpunit:
 	composer phpunit
 
-tests: check-autoload php-fixer psalm  phpunit
+tests: check-autoload php-fixer psalm phpunit
