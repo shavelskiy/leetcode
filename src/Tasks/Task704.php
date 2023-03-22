@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Tasks;
 
 /**
- * https://leetcode.com/problems/binary-search/?envType=study-plan&id=algorithm-i.
+ * https://leetcode.com/problems/binary-search
  * 88.10/68.15.
  */
 final class Task704
