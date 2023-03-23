@@ -6,24 +6,17 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/fibonacci-number/
- * 86.99/19.86
+ * 56.85/96.58
  */
 final class Task509
 {
     public function fib(int $n): int
     {
-        if ($n === 0) {
-            return 0;
-        }
-
-        $last = 0;
-        $current = 1;
+        $result = [0, 1];
         for ($i = 2; $i <= $n; $i++) {
-            $tmp = $last + $current;
-            $last = $current;
-            $current = $tmp;
+            $result = [$result[1], $result[0] + $result[1]];
         }
 
-        return $current;
+        return $n < 1 ? $result[$n] : $result[1];
     }
 }
