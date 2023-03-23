@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/course-schedule/
- * 19.23/76.92
+ * 23.8/76.92
  */
 final class Task207
 {
@@ -34,21 +34,15 @@ final class Task207
             }
         } while ($find === true);
 
-        foreach ($map as $value) {
-            if ($value !== null) {
-                return false;
-            }
-        }
-
-        return true;
+        return $map === [];
     }
 
     private function delete(array $map, int $num): array
     {
-        $map[$num] = null;
+        unset($map[$num]);
 
         foreach ($map as $key => $reqs) {
-            if ($reqs !== null && in_array($num, $reqs, true)) {
+            if (in_array($num, $reqs, true)) {
                 $map[$key] = array_filter($reqs, fn (int $current) => $current !== $num);
             }
         }
