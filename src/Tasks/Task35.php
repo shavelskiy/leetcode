@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace App\Tasks;
 
 /**
- * https://leetcode.com/problems/search-insert-position
- * 46.46/46.46.
+ * https://leetcode.com/problems/search-insert-position/
+ * 46.46/46.46
  */
 final class Task35
 {

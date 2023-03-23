@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/implement-trie-prefix-tree/
- * 17.86/88.10.
+ * 17.86/88.10
  */
 final class Task208
 {

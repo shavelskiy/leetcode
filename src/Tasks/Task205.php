@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace App\Tasks;
 
 /**
- * https://leetcode.com/problems/isomorphic-strings.
- * 86.29/98.79.
+ * https://leetcode.com/problems/isomorphic-strings/
+ * 86.29/98.79
  */
 final class Task205
 {

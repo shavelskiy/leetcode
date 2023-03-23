@@ -7,8 +7,8 @@ namespace App\Tasks;
 use App\Model\ListNode;
 
 /**
- * https://leetcode.com/problems/reverse-linked-list/.
- * 69.33/75.56.
+ * https://leetcode.com/problems/reverse-linked-list/
+ * 69.33/75.56
  */
 final class Task206
 {

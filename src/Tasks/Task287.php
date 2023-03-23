@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/find-the-duplicate-number/
- * 96.15/11.54.
+ * 96.15/11.54
  */
 final class Task287
 {

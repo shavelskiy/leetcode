@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace App\Tasks;
 
 /**
- * https://leetcode.com/problems/rotate-array.
- * 65.45/60.91.
+ * https://leetcode.com/problems/rotate-array
+ * 65.45/60.91
  */
 final class Task189
 {

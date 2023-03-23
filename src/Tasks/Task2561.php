@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace App\Tasks;
 
 /**
- * https://leetcode.com/problems/rearranging-fruits/.
- * 100/100.
+ * https://leetcode.com/problems/rearranging-fruits/
+ * 100/100
  */
 final class Task2561
 {

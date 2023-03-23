@@ -7,8 +7,8 @@ namespace App\Tasks;
 use App\Model\ListNode;
 
 /**
- * https://leetcode.com/problems/reverse-nodes-in-k-group/submissions/919123495/
- * 100/100.
+ * https://leetcode.com/problems/reverse-nodes-in-k-group/
+ * 100/100
  */
 final class Task25
 {

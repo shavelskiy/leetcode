@@ -7,8 +7,8 @@ namespace App\Tasks;
 use App\Model\TreeNode;
 
 /**
- * https://leetcode.com/problems/flatten-binary-tree-to-linked-list/.
- * 29.41/47.6.
+ * https://leetcode.com/problems/flatten-binary-tree-to-linked-list/
+ * 29.41/47.6
  */
 final class Task114
 {

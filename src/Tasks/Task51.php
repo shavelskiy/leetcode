@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace App\Tasks;
 
 /**
- * https://leetcode.com/problems/n-queens/.
- * 66.67/16.67.
+ * https://leetcode.com/problems/n-queens/
+ * 66.67/16.67
  */
 final class Task51
 {

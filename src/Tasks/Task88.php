@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace App\Tasks;
 
 /**
- * https://leetcode.com/problems/merge-sorted-array.
- * 57.78/80.
+ * https://leetcode.com/problems/merge-sorted-array/
+ * 57.78/80
  */
 final class Task88
 {

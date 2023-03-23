@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace App\Tasks;
 
 /**
- * https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/.
- * 82.32/76.92.
+ * https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
+ * 82.32/76.92
  */
 final class Task167
 {

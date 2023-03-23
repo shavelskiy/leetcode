@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace App\Tasks;
 
 /**
- * https://leetcode.com/problems/coin-change/.
- * 51.52/72.3.
+ * https://leetcode.com/problems/coin-change/
+ * 51.52/72.3
  */
 final class Task322
 {

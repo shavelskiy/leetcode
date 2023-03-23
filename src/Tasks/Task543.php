@@ -8,7 +8,7 @@ use App\Model\TreeNode;
 
 /**
  * https://leetcode.com/problems/diameter-of-binary-tree/
- * 5.26/89.47.
+ * 5.26/89.47
  */
 final class Task543
 {

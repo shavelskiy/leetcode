@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/top-k-frequent-elements/
- * 41.82/98.18.
+ * 41.82/98.18
  */
 final class Task347
 {

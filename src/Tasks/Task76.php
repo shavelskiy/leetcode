@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/minimum-window-substring/
- * 95.24/71.43.
+ * 95.24/71.43
  */
 final class Task76
 {

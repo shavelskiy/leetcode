@@ -6,6 +6,10 @@ namespace App\Tasks;
 
 use App\Model\TreeNode;
 
+/**
+ * https://leetcode.com/problems/kth-smallest-element-in-a-bst/
+ * 60/64
+ */
 final class Task230
 {
     public function kthSmallest(TreeNode $root, int $k): int

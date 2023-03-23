@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace App\Tasks;
 
 /**
- * https://leetcode.com/problems/number-of-islands/submissions/919755824/
- * 97.78/82.22.
+ * https://leetcode.com/problems/number-of-islands/
+ * 97.78/82.22
  */
 final class Task200
 {

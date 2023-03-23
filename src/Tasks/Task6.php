@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/zigzag-conversion/
- * 65.26/33.16.
+ * 65.26/33.16
  */
 final class Task6
 {

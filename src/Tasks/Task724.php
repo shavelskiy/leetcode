@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace App\Tasks;
 
 /**
- * https://leetcode.com/problems/find-pivot-index.
- * 46.98/84.25.
+ * https://leetcode.com/problems/find-pivot-index/
+ * 46.98/84.25
  */
 final class Task724
 {

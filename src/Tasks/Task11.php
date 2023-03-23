@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/container-with-most-water/
- * 70.23/12.98.
+ * 70.23/12.98
  */
 final class Task11
 {

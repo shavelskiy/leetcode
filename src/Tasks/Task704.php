@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace App\Tasks;
 
 /**
- * https://leetcode.com/problems/binary-search
- * 52.98/45.54.
+ * https://leetcode.com/problems/binary-search/
+ * 52.98/45.54
  */
 final class Task704
 {

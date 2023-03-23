@@ -8,7 +8,7 @@ use App\Model\ListNode;
 
 /**
  * https://leetcode.com/problems/add-two-numbers/
- * 41.45/18.27.
+ * 41.45/18.27
  */
 final class Task2
 {

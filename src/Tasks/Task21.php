@@ -7,8 +7,8 @@ namespace App\Tasks;
 use App\Model\ListNode;
 
 /**
- * https://leetcode.com/problems/merge-two-sorted-lists/submissions/918859502/
- * 57.91/99.54.
+ * https://leetcode.com/problems/merge-two-sorted-lists/
+ * 57.91/99.54
  */
 final class Task21
 {

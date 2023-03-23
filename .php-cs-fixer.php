@@ -23,5 +23,6 @@ return (new PhpCsFixer\Config())
         'declare_strict_types' => true,
         'global_namespace_import' => true,
         'final_class' => true,
+        'phpdoc_summary' => false,
     ])
     ->setFinder($finder);

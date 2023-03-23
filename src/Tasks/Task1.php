@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/two-sum/
- * 48.62/55.36.
+ * 48.62/55.36
  */
 final class Task1
 {

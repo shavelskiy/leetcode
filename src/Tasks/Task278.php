@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace App\Tasks;
 
 /**
- * https://leetcode.com/problems/first-bad-version
- * 16.24/61.93.
+ * https://leetcode.com/problems/first-bad-version/
+ * 16.24/61.93
  */
 final class Task278
 {

@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/longest-palindromic-substring/
- * 9.13/81.73.
+ * 9.13/81.73
  */
 final class Task5
 {

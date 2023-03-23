@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace App\Tasks;
 
 /**
- * https://leetcode.com/problems/maximum-subarray.
- * 63.87/67.23.
+ * https://leetcode.com/problems/maximum-subarray/
+ * 63.87/67.23
  */
 final class Task53
 {

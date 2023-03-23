@@ -7,8 +7,8 @@ namespace App\Tasks;
 use App\Model\TreeNode;
 
 /**
- * https://leetcode.com/problems/maximum-depth-of-binary-tree/.
- * 64.55/44.55.
+ * https://leetcode.com/problems/maximum-depth-of-binary-tree/
+ * 64.55/44.55
  */
 final class Task104
 {

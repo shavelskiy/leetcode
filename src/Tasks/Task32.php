@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace App\Tasks;
 
 /**
- * https://leetcode.com/problems/longest-valid-parentheses/.
- * 80/80.
+ * https://leetcode.com/problems/longest-valid-parentheses/
+ * 80/80
  */
 final class Task32
 {

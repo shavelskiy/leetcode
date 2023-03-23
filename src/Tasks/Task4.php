@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/median-of-two-sorted-arrays/
- * 13.35/92.23.
+ * 13.35/92.23
  */
 final class Task4
 {

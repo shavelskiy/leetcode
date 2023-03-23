@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace App\Tasks;
 
 /**
- * https://leetcode.com/problems/is-subsequence.
- * 95.63/53.88.
+ * https://leetcode.com/problems/is-subsequence/
+ * 95.63/53.88
  */
 final class Task392
 {

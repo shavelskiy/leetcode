@@ -7,8 +7,8 @@ namespace App\Tasks;
 use App\Model\ListNode;
 
 /**
- * https://leetcode.com/problems/linked-list-cycle/.
- * 69.31/52.57.
+ * https://leetcode.com/problems/linked-list-cycle/
+ * 69.31/52.57
  */
 final class Task141
 {

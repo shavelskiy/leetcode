@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace App\Tasks;
 
 /**
- * https://leetcode.com/problems/roman-to-integer/.
- * 67.99/67.44.
+ * https://leetcode.com/problems/roman-to-integer/
+ * 67.99/67.44
  */
 final class Task13
 {

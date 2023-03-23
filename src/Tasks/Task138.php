@@ -8,7 +8,7 @@ use App\Model\Node;
 
 /**
  * https://leetcode.com/problems/copy-list-with-random-pointer/
- * bug with submit.
+ * bug with submit
  */
 final class Task138
 {

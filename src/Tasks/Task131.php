@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace App\Tasks;
 
 /**
- * https://leetcode.com/problems/palindrome-partitioning/submissions/919505717/
- * 58.62/44.83.
+ * https://leetcode.com/problems/palindrome-partitioning/
+ * 58.62/44.83
  */
 final class Task131
 {

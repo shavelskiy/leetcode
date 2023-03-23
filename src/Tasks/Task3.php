@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/longest-substring-without-repeating-characters/
- * 11.12/34.17.
+ * 11.12/34.17
  */
 final class Task3
 {

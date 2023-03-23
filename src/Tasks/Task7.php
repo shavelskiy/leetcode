@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/reverse-integer/
- * 55.47/7.30.
+ * 55.47/7.30
  */
 final class Task7
 {

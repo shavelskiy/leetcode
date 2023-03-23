@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace App\Tasks;
 
 /**
- * https://leetcode.com/problems/squares-of-a-sorted-array.
- * 97.33/5.35.
+ * https://leetcode.com/problems/squares-of-a-sorted-array/
+ * 97.33/5.35
  */
 final class Task977
 {
