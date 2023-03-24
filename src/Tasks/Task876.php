@@ -8,6 +8,7 @@ use App\Model\ListNode;
 
 /**
  * https://leetcode.com/problems/middle-of-the-linked-list/
+ * 45.94/61.48
  */
 final class Task876
 {
