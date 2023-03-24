@@ -8,11 +8,11 @@ use App\Model\ListNode;
 
 /**
  * https://leetcode.com/problems/linked-list-cycle-ii/
- * 50.99/32.46
+ * 52.98/67.55
  */
 final class Task142
 {
-    public function detectCycle(ListNode $head): ?ListNode
+    public function detectCycle(?ListNode $head): ?ListNode
     {
         $stack = [];
         while ($head !== null) {
