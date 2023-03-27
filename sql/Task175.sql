@@ -7,3 +7,4 @@ Truncate table Address;
 insert into Address (addressId, personId, city, state) values ('1', '2', 'New York City', 'New York');
 insert into Address (addressId, personId, city, state) values ('2', '3', 'Leetcode', 'California');
 
+select p.firstName, p.lastName, a.city, a.state from Person p left join Address a on p.personId = a.personId;
