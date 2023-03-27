@@ -25,4 +25,4 @@ tests: check-autoload php-fixer phpunit
 check: check-autoload php-fixer psalm phpunit
 
 db:
-	docker-compose exec db psql -Upostgres
+	docker-compose exec db mysql -uroot -psecret
