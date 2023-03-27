@@ -16,10 +16,6 @@ final class Task1232
     public function checkStraightLine(array $coordinates): bool
     {
         $n = count($coordinates);
-        if ($n <= 2) {
-            return true;
-        }
-
         $diff = [$coordinates[1][0] - $coordinates[0][0], $coordinates[1][1] - $coordinates[0][1]];
         for ($i = 2; $i < $n; $i++) {
             if (
