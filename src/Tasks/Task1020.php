@@ -42,7 +42,7 @@ final class Task1020
 
     public function process(array &$grid, int $i, int $j): void
     {
-        if (!isset($grid[$i][$j]) || $grid[$i][$j] === 0) {
+        if (($grid[$i][$j] ?? 0) === 0) {
             return;
         }
 
