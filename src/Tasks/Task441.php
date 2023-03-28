@@ -1,12 +1,14 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/arranging-coins/
  * 88.24/58.82
  */
-class Task441
+final class Task441
 {
     public function arrangeCoins(int $n): int
     {

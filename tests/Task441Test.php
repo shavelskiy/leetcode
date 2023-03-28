@@ -1,11 +1,13 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Tests;
 
 use App\Tasks\Task441;
 use PHPUnit\Framework\TestCase;
 
-class Task441Test extends TestCase
+final class Task441Test extends TestCase
 {
     public function test441(): void
     {
