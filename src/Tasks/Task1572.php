@@ -1,12 +1,14 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/matrix-diagonal-sum/
  * 96.43/82.14
  */
-class Task1572
+final class Task1572
 {
     /**
      * @param array<int[]> $mat
