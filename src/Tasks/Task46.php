@@ -1,15 +1,18 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/permutations/
  * 23.73.22.3
  */
-class Task46
+final class Task46
 {
     /**
      * @param int[] $nums
+     *
      * @return array<int[]>
      */
     public function permute(array $nums): array

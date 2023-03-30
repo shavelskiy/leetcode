@@ -1,11 +1,13 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Tests;
 
 use App\Tasks\Task46;
 use PHPUnit\Framework\TestCase;
 
-class Task46Test extends TestCase
+final class Task46Test extends TestCase
 {
     /**
      * @dataProvider dataProvider
