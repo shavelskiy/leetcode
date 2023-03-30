@@ -1,0 +1,28 @@
+<?php
+
+namespace App\Tests;
+
+use App\Tasks\Task1678;
+use PHPUnit\Framework\TestCase;
+
+class Task1678Test extends TestCase
+{
+    /**
+     * @dataProvider dataProvider
+     */
+    public function test1678(string $command, string $result): void
+    {
+        $sut = new Task1678();
+
+        self::assertSame($sut->interpret($command), $result);
+    }
+
+    public static function dataProvider(): array
+    {
+        return [
+            ['G()(al)', 'Goal'],
+            ['G()()()()(al)', 'Gooooal'],
+            ['(al)G(al)()()G', 'alGalooG'],
+        ];
+    }
+}
