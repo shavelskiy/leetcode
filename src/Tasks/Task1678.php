@@ -1,12 +1,14 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/goal-parser-interpretation/
  * 20.69/70.69
  */
-class Task1678
+final class Task1678
 {
     public function interpret(string $command): string
     {
