@@ -9,8 +9,7 @@
   "require": {
     "friendsofphp/php-cs-fixer": "^3.15",
     "phpunit/phpunit": "^10.0",
-    "symfony/var-dumper": "^6.2",
-    "vimeo/psalm": "^5.8"
+    "symfony/var-dumper": "^6.2"
   },
   "autoload": {
     "psr-4": {
@@ -32,7 +31,6 @@
   },
   "scripts": {
     "php-cs-fixer": "php-cs-fixer",
-    "psalm": "psalm",
     "phpunit": "phpunit --display-warnings"
   }
 }

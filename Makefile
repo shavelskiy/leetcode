@@ -15,14 +15,10 @@ check-autoload:
 php-fixer:
 	composer php-cs-fixer fix -- --allow-risky=yes
 
-psalm:
-	composer psalm
-
 phpunit:
 	composer phpunit
 
 tests: check-autoload php-fixer phpunit
-check: check-autoload php-fixer psalm phpunit
 
 db:
 	docker-compose exec db mysql -uroot -psecret
