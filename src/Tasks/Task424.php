@@ -16,7 +16,7 @@ final class Task424
         $result = 0;
 
         $n = strlen($s);
-        $left  = 0;
+        $left = 0;
 
         for ($right = 0; $right < $n; $right++) {
             $map[$s[$right]] = ($map[$s[$right]] ?? 0) + 1;
