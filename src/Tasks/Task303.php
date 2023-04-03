@@ -29,7 +29,7 @@ final class Task303
         if ($left === 0) {
             return $this->sums[$right];
         }
-        
+
         return $this->sums[$right] - $this->sums[$left - 1];
     }
 }
