@@ -4,9 +4,11 @@ declare(strict_types=1);
 
 namespace App\Tasks;
 
+use App\Model\Heap692 as Heap;
+
 /**
  * https://leetcode.com/problems/top-k-frequent-words/
- * 21.74/65.22
+ * 91.30/65.22
  */
 final class Task692
 {
@@ -22,20 +24,20 @@ final class Task692
             $map[$word] = ($map[$word] ?? 0) + 1;
         }
 
-        $result = [];
+        $heap = new Heap();
         foreach ($map as $word => $count) {
-            foreach ($result as $index => $current) {
-                if ($count > $map[$current] || ($count === $map[$current] && $word < $current)) {
-                    continue;
-                }
+            $heap->insert([$word, $count]);
 
-                $result = [...array_slice($result, 0, $index), $word, ...array_slice($result, $index)];
-                continue 2;
+            if ($heap->count() > $k) {
+                $heap->extract();
             }
-
-            $result[] = $word;
         }
 
-        return array_reverse(array_slice($result, $k * -1));
+        $result = [];
+        while ($heap->count() > 0) {
+            $result[] = $heap->extract()[0];
+        }
+
+        return array_reverse($result);
     }
 }
