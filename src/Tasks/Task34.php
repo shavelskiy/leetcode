@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
- * 89.47/48.68
+ * 89.47/48.68.
  */
 final class Task34
 {

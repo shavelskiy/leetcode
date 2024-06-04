@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/add-binary/
- * 79.59/62.25
+ * 79.59/62.25.
  */
 final class Task67
 {
@@ -29,8 +29,8 @@ final class Task67
                 $result .= $accumulator ? '0' : '1';
             }
 
-            $i--;
-            $j--;
+            --$i;
+            --$j;
         }
 
         $result .= $accumulator ? '1' : '';

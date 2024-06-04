@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/first-bad-version/
- * 16.24/61.93
+ * 16.24/61.93.
  */
 final class Task278
 {

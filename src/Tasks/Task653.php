@@ -8,7 +8,7 @@ use App\Model\TreeNode;
 
 /**
  * https://leetcode.com/problems/two-sum-iv-input-is-a-bst/
- * 87.50/12.50
+ * 87.50/12.50.
  */
 final class Task653
 {

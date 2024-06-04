@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/move-zeroes/
- * 65.10/54.26
+ * 65.10/54.26.
  */
 final class Task283
 {
@@ -18,13 +18,13 @@ final class Task283
         $count = 0;
         foreach ($nums as $key => $num) {
             if ($num === 0) {
-                $count++;
+                ++$count;
                 unset($nums[$key]);
             }
         }
 
         $nums = array_values($nums);
-        for ($i = 0; $i < $count; $i++) {
+        for ($i = 0; $i < $count; ++$i) {
             $nums[] = 0;
         }
     }

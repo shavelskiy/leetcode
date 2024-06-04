@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/n-queens/
- * 66.67/16.67
+ * 66.67/16.67.
  */
 final class Task51
 {
@@ -60,7 +60,7 @@ final class Task51
      */
     private function updateMap(array $map, int $i, int $j): array
     {
-        for ($k = $i + 1; $k < count($map); $k++) {
+        for ($k = $i + 1; $k < count($map); ++$k) {
             $map[$k][$j] = false;
 
             if ($j + $k - $i < count($map)) {

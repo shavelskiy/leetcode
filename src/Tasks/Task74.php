@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/search-a-2d-matrix/
- * 43.18/36.36
+ * 43.18/36.36.
  */
 final class Task74
 {

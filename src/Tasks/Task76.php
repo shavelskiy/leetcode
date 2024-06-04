@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/minimum-window-substring/
- * 95.24/71.43
+ * 95.24/71.43.
  */
 final class Task76
 {
@@ -18,7 +18,7 @@ final class Task76
         $chars = [];
         $window = [];
 
-        for ($i = 0; $i < $n; $i++) {
+        for ($i = 0; $i < $n; ++$i) {
             $char = $t[$i];
             $chars[$char] = array_key_exists($char, $chars) ? ($chars[$char] + 1) : 1;
             $window[$char] = 0;
@@ -31,22 +31,22 @@ final class Task76
         $startIndex = null;
         $resultLenght = null;
 
-        for ($rightIndex = 0; $rightIndex < $m; $rightIndex++) {
+        for ($rightIndex = 0; $rightIndex < $m; ++$rightIndex) {
             $char = $s[$rightIndex];
             if (!array_key_exists($char, $chars)) {
                 continue;
             }
 
-            $window[$char]++;
+            ++$window[$char];
 
             if ($window[$char] === $chars[$char]) {
-                $have++;
+                ++$have;
             }
 
             while ($have == $need && $leftIndex <= $rightIndex) {
                 $leftChar = $s[$leftIndex];
                 if (!array_key_exists($leftChar, $chars)) {
-                    $leftIndex++;
+                    ++$leftIndex;
                     continue;
                 }
 
@@ -55,11 +55,11 @@ final class Task76
                     $resultLenght = $rightIndex - $leftIndex + 1;
                 }
 
-                $window[$leftChar]--;
+                --$window[$leftChar];
                 if ($window[$leftChar] < $chars[$leftChar]) {
-                    $have--;
+                    --$have;
                 }
-                $leftIndex++;
+                ++$leftIndex;
             }
         }
 

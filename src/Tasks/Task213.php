@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/house-robber-ii/
- * 50/75
+ * 50/75.
  */
 final class Task213
 {
@@ -22,7 +22,7 @@ final class Task213
 
         $result1 = [0, $nums[1]];
         $result2 = [$nums[0], 0];
-        for ($i = 2; $i < $n; $i++) {
+        for ($i = 2; $i < $n; ++$i) {
             $result1 = [max($result1), max($result1[1], $result1[0] + $nums[$i])];
 
             if ($i !== $n - 1) {

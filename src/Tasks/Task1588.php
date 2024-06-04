@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/sum-of-all-odd-length-subarrays/
- * 72/64
+ * 72/64.
  */
 final class Task1588
 {
@@ -17,12 +17,12 @@ final class Task1588
     {
         $n = count($arr);
         $result = 0;
-        for ($i = 0; $i < $n; $i++) {
+        for ($i = 0; $i < $n; ++$i) {
             $total = ($i + 1) * ($n - $i);
             $odd = intdiv($total, 2);
 
             if ($total % 2 === 1) {
-                $odd++;
+                ++$odd;
             }
 
             $result += $odd * $arr[$i];

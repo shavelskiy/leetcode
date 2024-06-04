@@ -18,7 +18,7 @@ final class Task918
         $max2 = -1 * $max1;
         $current2 = -1 * $current1;
         $sum = $nums[0];
-        for ($i = 1; $i < $n; $i++) {
+        for ($i = 1; $i < $n; ++$i) {
             $value = $nums[$i];
             $sum += $value;
 

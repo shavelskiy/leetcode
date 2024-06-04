@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/sum-of-square-numbers/
- * 100/100
+ * 100/100.
  */
 final class Task633
 {
@@ -19,9 +19,9 @@ final class Task633
             $current = $start ** 2 + $end ** 2;
 
             if ($current > $c) {
-                $end--;
+                --$end;
             } elseif ($current < $c) {
-                $start++;
+                ++$start;
             } else {
                 return true;
             }

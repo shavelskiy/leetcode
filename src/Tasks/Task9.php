@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/palindrome-number/
- * 57.61/15.50
+ * 57.61/15.50.
  */
 final class Task9
 {

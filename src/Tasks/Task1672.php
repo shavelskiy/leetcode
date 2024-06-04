@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/richest-customer-wealth/description/
- * 33.22/23.83
+ * 33.22/23.83.
  */
 final class Task1672
 {

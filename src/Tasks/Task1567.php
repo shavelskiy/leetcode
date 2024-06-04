@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/maximum-length-of-subarray-with-positive-product/
- * 100/100
+ * 100/100.
  */
 final class Task1567
 {
@@ -21,7 +21,7 @@ final class Task1567
 
         foreach ($nums as $num) {
             if ($num > 0) {
-                $pos++;
+                ++$pos;
                 $neg = $neg > 0 ? $neg + 1 : 0;
             } elseif ($num < 0) {
                 $tmp = $pos;

@@ -8,7 +8,7 @@ use App\Model\TreeNode;
 
 /**
  * https://leetcode.com/problems/insert-into-a-binary-search-tree/
- * 100/100
+ * 100/100.
  */
 final class Task701
 {

@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/peak-index-in-a-mountain-array/
- * 50/87.50
+ * 50/87.50.
  */
 final class Task852
 {

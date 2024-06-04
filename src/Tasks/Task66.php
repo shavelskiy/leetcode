@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Tasks;
 
 /**
- * https://leetcode.com/problems/plus-one/
+ * https://leetcode.com/problems/plus-one/.
  */
 final class Task66
 {
@@ -16,8 +16,8 @@ final class Task66
      */
     public function plusOne(array $digits): array
     {
-        for ($i = count($digits) - 1; $i >= 0; $i--) {
-            $digits[$i]++;
+        for ($i = count($digits) - 1; $i >= 0; --$i) {
+            ++$digits[$i];
             if ($digits[$i] < 10) {
                 return $digits;
             }

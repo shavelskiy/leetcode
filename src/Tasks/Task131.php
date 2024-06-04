@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/palindrome-partitioning/
- * 58.62/44.83
+ * 58.62/44.83.
  */
 final class Task131
 {
@@ -17,7 +17,7 @@ final class Task131
     {
         $result = [];
 
-        for ($i = 1; $i <= strlen($s); $i++) {
+        for ($i = 1; $i <= strlen($s); ++$i) {
             foreach ($this->find($s, $i) as $item) {
                 $result[] = $item;
             }

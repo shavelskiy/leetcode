@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/implement-queue-using-stacks/
- * 9.9/40.91
+ * 9.9/40.91.
  */
 final class Task232
 {

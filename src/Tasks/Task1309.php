@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/decrypt-string-from-alphabet-to-integer-mapping/
- * 71.43/100
+ * 71.43/100.
  */
 final class Task1309
 {
@@ -14,7 +14,7 @@ final class Task1309
     {
         $result = '';
 
-        for ($i = strlen($s) - 1; $i >= 0; $i--) {
+        for ($i = strlen($s) - 1; $i >= 0; --$i) {
             $char = $s[$i];
             if ($char === '#') {
                 $result = chr((int)($s[$i - 2] . $s[$i - 1]) + 96) . $result;

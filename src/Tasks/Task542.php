@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/01-matrix/
- * 71.43/100
+ * 71.43/100.
  */
 final class Task542
 {
@@ -22,8 +22,8 @@ final class Task542
 
         $result = array_fill(0, $m, array_fill(0, $n, null));
 
-        for ($i = 0; $i < $m; $i++) {
-            for ($j = 0; $j < $n; $j++) {
+        for ($i = 0; $i < $m; ++$i) {
+            for ($j = 0; $j < $n; ++$j) {
                 if ($mat[$i][$j] === 0) {
                     $result[$i][$j] = 0;
                     continue;
@@ -43,8 +43,8 @@ final class Task542
             }
         }
 
-        for ($i = $m - 1; $i >= 0; $i--) {
-            for ($j = $n - 1; $j >= 0; $j--) {
+        for ($i = $m - 1; $i >= 0; --$i) {
+            for ($j = $n - 1; $j >= 0; --$j) {
                 if (($prev = $result[$i + 1][$j] ?? null) !== null) {
                     $result[$i][$j] = $result[$i][$j] === null
                         ? $prev + 1

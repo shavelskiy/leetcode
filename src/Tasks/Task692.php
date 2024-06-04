@@ -8,7 +8,7 @@ use App\Model\Heap692 as Heap;
 
 /**
  * https://leetcode.com/problems/top-k-frequent-words/
- * 91.30/65.22
+ * 91.30/65.22.
  */
 final class Task692
 {

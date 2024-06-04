@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/length-of-last-word/
- * 100/81.63
+ * 100/81.63.
  */
 final class Task58
 {

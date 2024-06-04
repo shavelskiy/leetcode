@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/check-knight-tour-configuration/
- * 87.5/100
+ * 87.5/100.
  */
 final class Task2596
 {

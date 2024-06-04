@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/number-of-islands/
- * 97.78/82.22
+ * 97.78/82.22.
  */
 final class Task200
 {
@@ -20,10 +20,10 @@ final class Task200
         $rows = count($grid);
         $cols = count($grid[0]);
 
-        for ($i = 0; $i < $rows; $i++) {
-            for ($j = 0; $j < $cols; $j++) {
+        for ($i = 0; $i < $rows; ++$i) {
+            for ($j = 0; $j < $cols; ++$j) {
                 if ($grid[$i][$j] === '1') {
-                    $result++;
+                    ++$result;
                     $this->clearIsland($grid, $i, $j);
                 }
             }

@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/max-area-of-island/
- * 63.27/51.2
+ * 63.27/51.2.
  */
 final class Task695
 {
@@ -19,8 +19,8 @@ final class Task695
         $n = count($grid[0]);
 
         $max = 0;
-        for ($y = 0; $y < $m; $y++) {
-            for ($x = 0; $x < $n; $x++) {
+        for ($y = 0; $y < $m; ++$y) {
+            for ($x = 0; $x < $n; ++$x) {
                 if ($grid[$y][$x] !== 1) {
                     continue;
                 }
@@ -41,7 +41,7 @@ final class Task695
             return;
         }
 
-        $sum++;
+        ++$sum;
         $grid[$y][$x] = 0;
 
         $this->getIslandArea($sum, $grid, $y - 1, $x);

@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/number-of-1-bits/
- * 67.57/66.67
+ * 67.57/66.67.
  */
 final class Task191
 {
@@ -16,7 +16,7 @@ final class Task191
 
         while ($n > 0) {
             if ($n % 2 > 0) {
-                $result++;
+                ++$result;
             }
             $n = intdiv($n, 2);
         }

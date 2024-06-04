@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/rotate-array
- * 65.45/60.91
+ * 65.45/60.91.
  */
 final class Task189
 {
@@ -17,7 +17,7 @@ final class Task189
     {
         $n = count($nums);
         $result = array_fill(0, $n, 0);
-        for ($i = 0; $i < $n; $i++) {
+        for ($i = 0; $i < $n; ++$i) {
             $result[($i + $k) % $n] = $nums[$i];
         }
 

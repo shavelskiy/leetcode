@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/binary-search/
- * 52.98/45.54
+ * 52.98/45.54.
  */
 final class Task704
 {

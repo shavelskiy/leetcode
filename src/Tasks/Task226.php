@@ -8,7 +8,7 @@ use App\Model\TreeNode;
 
 /**
  * https://leetcode.com/problems/invert-binary-tree/
- * 84.67/46.67
+ * 84.67/46.67.
  */
 final class Task226
 {

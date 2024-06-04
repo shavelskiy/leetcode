@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/jump-game/
- * 71.43/45.71
+ * 71.43/45.71.
  */
 final class Task55
 {
@@ -18,14 +18,14 @@ final class Task55
         $i = count($nums);
         $need = 0;
         while ($i > 1) {
-            $i--;
+            --$i;
             if ($nums[$i - 1] === 0) {
-                $need++;
+                ++$need;
                 continue;
             }
 
             if ($nums[$i - 1] <= $need) {
-                $need++;
+                ++$need;
             } else {
                 $need = 0;
             }

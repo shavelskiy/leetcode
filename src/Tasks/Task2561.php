@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/rearranging-fruits/
- * 100/100
+ * 100/100.
  */
 final class Task2561
 {
@@ -37,13 +37,13 @@ final class Task2561
 
         $tmp = [];
         foreach ($map1 as $value => $count) {
-            for ($i = 0; $i < $count; $i++) {
+            for ($i = 0; $i < $count; ++$i) {
                 $tmp[] = $value;
             }
         }
 
         foreach ($map2 as $value => $count) {
-            for ($i = 0; $i < $count; $i++) {
+            for ($i = 0; $i < $count; ++$i) {
                 $tmp[] = $value;
             }
         }
@@ -51,7 +51,7 @@ final class Task2561
         sort($tmp);
 
         $result = 0;
-        for ($i = 0; $i < count($tmp) / 2; $i++) {
+        for ($i = 0; $i < count($tmp) / 2; ++$i) {
             $result += (int)min([$tmp[$i], $min]);
         }
 

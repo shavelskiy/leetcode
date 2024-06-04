@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/number-of-closed-islands/
- * 100/100
+ * 100/100.
  */
 final class Task1254
 {
@@ -19,8 +19,8 @@ final class Task1254
         $m = count($grid[0]);
 
         $result = 0;
-        for ($i = 0; $i < $n; $i++) {
-            for ($j = 0; $j < $m; $j++) {
+        for ($i = 0; $i < $n; ++$i) {
+            for ($j = 0; $j < $m; ++$j) {
                 if ($grid[$i][$j] === 1) {
                     continue;
                 }
@@ -28,7 +28,7 @@ final class Task1254
                 $valid = true;
                 $this->validate($grid, $valid, $i, $j);
                 if ($valid) {
-                    $result++;
+                    ++$result;
                 }
             }
         }

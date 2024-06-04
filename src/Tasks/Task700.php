@@ -7,7 +7,7 @@ namespace App\Tasks;
 use App\Model\TreeNode;
 
 /**
- * https://leetcode.com/problems/search-in-a-binary-search-tree/
+ * https://leetcode.com/problems/search-in-a-binary-search-tree/.
  */
 final class Task700
 {

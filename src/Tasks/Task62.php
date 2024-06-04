@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/unique-paths/
- * 91.7/28.57
+ * 91.7/28.57.
  */
 final class Task62
 {
@@ -15,11 +15,11 @@ final class Task62
         $result = array_fill(0, $m, array_fill(0, $n, 0));
         $result[0][0] = 1;
 
-        $m--;
-        $n--;
+        --$m;
+        --$n;
 
-        for ($i = 0; $i <= $m; $i++) {
-            for ($j = 0; $j <= $n; $j++) {
+        for ($i = 0; $i <= $m; ++$i) {
+            for ($j = 0; $j <= $n; ++$j) {
                 if ($i < $m) {
                     $result[$i + 1][$j] += $result[$i][$j];
                 }

@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/find-pivot-index/
- * 46.98/84.25
+ * 46.98/84.25.
  */
 final class Task724
 {
@@ -20,7 +20,7 @@ final class Task724
         $left = 0;
         $right = 0;
 
-        for ($j = 1; $j < count($nums); $j++) {
+        for ($j = 1; $j < count($nums); ++$j) {
             $right += $nums[$j];
         }
 
@@ -37,7 +37,7 @@ final class Task724
                 $right -= $nums[$i + 1];
             }
 
-            $i++;
+            ++$i;
         }
 
         return -1;

@@ -8,7 +8,7 @@ use App\Model\TreeNode;
 
 /**
  * https://leetcode.com/problems/sum-of-left-leaves/
- * 80/80
+ * 80/80.
  */
 final class Task404
 {

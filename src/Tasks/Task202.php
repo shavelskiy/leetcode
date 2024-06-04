@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/happy-number/
- * 69.7/92.78
+ * 69.7/92.78.
  */
 final class Task202
 {

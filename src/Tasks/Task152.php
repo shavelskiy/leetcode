@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/maximum-product-subarray/
- * 33.33/54.17
+ * 33.33/54.17.
  */
 final class Task152
 {

@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/flood-fill/
- * 85.19/40.74
+ * 85.19/40.74.
  */
 final class Task733
 {

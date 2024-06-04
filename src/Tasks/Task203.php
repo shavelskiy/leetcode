@@ -8,7 +8,7 @@ use App\Model\ListNode;
 
 /**
  * https://leetcode.com/problems/remove-linked-list-elements/
- * 48.84/34.88
+ * 48.84/34.88.
  */
 final class Task203
 {

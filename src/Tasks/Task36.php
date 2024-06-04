@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/valid-sudoku/
- * 98.31/42.37
+ * 98.31/42.37.
  */
 final class Task36
 {
@@ -16,8 +16,8 @@ final class Task36
     public function isValidSudoku(array $board): bool
     {
         $checked = [];
-        for ($i = 0; $i < 9; $i++) {
-            for ($j = 0; $j < 9; $j++) {
+        for ($i = 0; $i < 9; ++$i) {
+            for ($j = 0; $j < 9; ++$j) {
                 if (($value = $board[$i][$j]) === '.') {
                     continue;
                 }
@@ -33,7 +33,7 @@ final class Task36
 
     private function isValidCell(array &$checked, array $board, string $value, int $y, int $x): bool
     {
-        for ($i = 0; $i < 9; $i++) {
+        for ($i = 0; $i < 9; ++$i) {
             if ($i !== $x && $board[$y][$i] === $value) {
                 return false;
             }
@@ -53,8 +53,8 @@ final class Task36
         $checked[$centerStartX][$centerStartY] = true;
 
         $values = [];
-        for ($i = 0; $i < 3; $i++) {
-            for ($j = 0; $j < 3; $j++) {
+        for ($i = 0; $i < 3; ++$i) {
+            for ($j = 0; $j < 3; ++$j) {
                 if (($cellValue = $board[$centerStartY + $i][$centerStartX + $j]) === '.') {
                     continue;
                 }

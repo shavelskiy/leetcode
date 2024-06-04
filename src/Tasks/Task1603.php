@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/design-parking-system/
- * 78.38/97.30
+ * 78.38/97.30.
  */
 final class Task1603
 {
@@ -23,7 +23,7 @@ final class Task1603
             return false;
         }
 
-        $this->count[$carType - 1]--;
+        --$this->count[$carType - 1];
         return true;
     }
 }

@@ -8,7 +8,7 @@ use App\Model\TreeNodeRight as Node;
 
 /**
  * https://leetcode.com/problems/populating-next-right-pointers-in-each-node/
- * 80/86.67
+ * 80/86.67.
  */
 final class Task116
 {

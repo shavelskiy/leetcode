@@ -8,7 +8,7 @@ use App\Model\TreeNode;
 
 /**
  * https://leetcode.com/problems/validate-binary-search-tree/
- * 75/32.35
+ * 75/32.35.
  */
 final class Task98
 {

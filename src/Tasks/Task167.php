@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
- * 82.32/76.92
+ * 82.32/76.92.
  */
 final class Task167
 {
@@ -27,9 +27,9 @@ final class Task167
             }
 
             if ($sum > $target) {
-                $j--;
+                --$j;
             } else {
-                $i++;
+                ++$i;
             }
         }
 

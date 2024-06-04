@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/letter-case-permutation/
- * 55.56/44.44
+ * 55.56/44.44.
  */
 final class Task784
 {
@@ -18,7 +18,7 @@ final class Task784
         $n = strlen($s);
         $result = [];
 
-        for ($i = $start; $i < $n; $i++) {
+        for ($i = $start; $i < $n; ++$i) {
             if ($i === $n - 1) {
                 $result[] = $s;
             }

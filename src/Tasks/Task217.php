@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/contains-duplicate/
- * 52.16/51.38
+ * 52.16/51.38.
  */
 final class Task217
 {

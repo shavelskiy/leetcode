@@ -8,14 +8,14 @@ use App\Model\ListNode;
 
 /**
  * https://leetcode.com/problems/reverse-nodes-in-k-group/
- * 100/100
+ * 100/100.
  */
 final class Task25
 {
     public function reverseKGroup(ListNode $head, int $k): ListNode
     {
         $result = $head;
-        for ($i = 1; $i < $k; $i++) {
+        for ($i = 1; $i < $k; ++$i) {
             if ($result->next !== null) {
                 $result = $result->next;
             }
@@ -27,14 +27,14 @@ final class Task25
             $lenght -= $k;
 
             $nextBatch = $head;
-            for ($j = 0; $j < $k; $j++) {
+            for ($j = 0; $j < $k; ++$j) {
                 if ($nextBatch->next !== null) {
                     $nextBatch = $nextBatch->next;
                 }
             }
 
             $first = $head;
-            for ($i = 0; $i < $k; $i++) {
+            for ($i = 0; $i < $k; ++$i) {
                 $prev = $head;
                 $head = $next ?? $head;
                 $next = $head->next;
@@ -51,7 +51,7 @@ final class Task25
             } else {
                 $first->next = $nextBatch;
                 if ($lenght >= $k) {
-                    for ($i = 1; $i < $k; $i++) {
+                    for ($i = 1; $i < $k; ++$i) {
                         if ($first->next !== null) {
                             $first->next = $first->next->next;
                         }
@@ -70,7 +70,7 @@ final class Task25
         $result = 0;
         while ($list !== null) {
             $list = $list->next;
-            $result++;
+            ++$result;
         }
 
         return $result;

@@ -8,7 +8,7 @@ use App\Model\TreeNode;
 
 /**
  * https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/
- * 6.67/97.78
+ * 6.67/97.78.
  */
 final class Task235
 {

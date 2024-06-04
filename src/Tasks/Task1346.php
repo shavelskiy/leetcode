@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/check-if-n-and-its-double-exist/
- * 61.54/12.82
+ * 61.54/12.82.
  */
 final class Task1346
 {
@@ -32,7 +32,7 @@ final class Task1346
     {
         sort($arr);
 
-        for ($i = count($arr) - 1; $i > 0; $i--) {
+        for ($i = count($arr) - 1; $i > 0; --$i) {
             if (($arr[$i] % 2) > 0) {
                 continue;
             }

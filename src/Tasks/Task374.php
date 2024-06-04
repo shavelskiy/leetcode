@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/guess-number-higher-or-lower/
- * 72.23/27.27
+ * 72.23/27.27.
  */
 final class Task374
 {

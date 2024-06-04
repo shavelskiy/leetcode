@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/find-nearest-point-that-has-the-same-x-or-y-coordinate/
- * 31.25/56.25
+ * 31.25/56.25.
  */
 final class Task1779
 {

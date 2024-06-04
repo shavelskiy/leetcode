@@ -8,7 +8,7 @@ use App\Model\TreeNode;
 
 /**
  * https://leetcode.com/problems/path-sum/
- * 90.63/71.88
+ * 90.63/71.88.
  */
 final class Task112
 {

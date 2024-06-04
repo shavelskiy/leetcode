@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/delete-and-earn/
- * 50/100
+ * 50/100.
  */
 final class Task740
 {

@@ -8,7 +8,7 @@ use App\Model\TreeNode;
 
 /**
  * https://leetcode.com/problems/binary-tree-postorder-traversal/
- * 72.41/86.21
+ * 72.41/86.21.
  */
 final class Task145
 {

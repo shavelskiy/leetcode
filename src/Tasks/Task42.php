@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/trapping-rain-water/
- * 94.29/42.86
+ * 94.29/42.86.
  */
 final class Task42
 {
@@ -30,14 +30,14 @@ final class Task42
                 } else {
                     $result += $leftMax - $height[$left];
                 }
-                $left++;
+                ++$left;
             } else {
                 if ($height[$right] >= $rightMax) {
                     $rightMax = $height[$right];
                 } else {
                     $result += $rightMax - $height[$right];
                 }
-                $right--;
+                --$right;
             }
         }
 

@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/ransom-note/description/
- * 92.36/79.17
+ * 92.36/79.17.
  */
 final class Task383
 {
@@ -14,17 +14,17 @@ final class Task383
     {
         $n = strlen($magazine);
         $map = [];
-        for ($i = 0; $i < $n; $i++) {
+        for ($i = 0; $i < $n; ++$i) {
             $map[$magazine[$i]] = ($map[$magazine[$i]] ?? 0) + 1;
         }
 
         $n = strlen($ransomNote);
-        for ($i = 0; $i < $n; $i++) {
+        for ($i = 0; $i < $n; ++$i) {
             if (($map[$ransomNote[$i]] ?? 0) < 1) {
                 return false;
             }
 
-            $map[$ransomNote[$i]]--;
+            --$map[$ransomNote[$i]];
         }
 
         return true;

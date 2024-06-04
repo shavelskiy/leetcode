@@ -6,20 +6,20 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/longest-palindromic-substring/
- * 9.13/81.73
+ * 9.13/81.73.
  */
 final class Task5
 {
     public function longestPalindrome(string $s): string
     {
-        for ($i = strlen($s); $i > 0; $i--) {
+        for ($i = strlen($s); $i > 0; --$i) {
             $j = 0;
             while ($j + $i <= strlen($s)) {
                 $tmp = substr($s, $j, $i);
                 if ($this->isPolindrom($tmp)) {
                     return $tmp;
                 }
-                $j++;
+                ++$j;
             }
         }
 

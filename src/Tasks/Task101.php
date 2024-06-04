@@ -8,7 +8,7 @@ use App\Model\TreeNode;
 
 /**
  * https://leetcode.com/problems/symmetric-tree/
- * 76.43/66.43
+ * 76.43/66.43.
  */
 final class Task101
 {

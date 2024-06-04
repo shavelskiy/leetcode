@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/verifying-an-alien-dictionary/
- * 41.76/54.95
+ * 41.76/54.95.
  */
 final class Task953
 {
@@ -17,12 +17,12 @@ final class Task953
     {
         $map = [];
         $n = strlen($order);
-        for ($i = 0; $i < $n; $i++) {
+        for ($i = 0; $i < $n; ++$i) {
             $map[$order[$i]] = $i;
         }
 
         $n = count($words) - 1;
-        for ($i = 0; $i < $n; $i++) {
+        for ($i = 0; $i < $n; ++$i) {
             if (!$this->compare($words[$i], $words[$i + 1], $map)) {
                 return false;
             }
@@ -43,7 +43,7 @@ final class Task953
         $i = 0;
         while ($i < $n1 && $i < $n2) {
             if ($word1[$i] === $word2[$i]) {
-                $i++;
+                ++$i;
                 continue;
             }
 

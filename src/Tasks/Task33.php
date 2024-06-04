@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/search-in-rotated-sorted-array/
- * 80/100
+ * 80/100.
  */
 final class Task33
 {
@@ -18,7 +18,7 @@ final class Task33
         $n = count($nums);
         $offset = 0;
 
-        for ($i = 1; $i < $n; $i++) {
+        for ($i = 1; $i < $n; ++$i) {
             if ($nums[$i] < $nums[$i - 1]) {
                 $offset = $i;
                 break;

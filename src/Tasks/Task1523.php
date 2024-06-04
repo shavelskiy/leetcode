@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/
- * 92.95/47.42
+ * 92.95/47.42.
  */
 final class Task1523
 {
@@ -14,15 +14,15 @@ final class Task1523
     {
         $result = 0;
         if ($low % 2 === 0) {
-            $low--;
+            --$low;
         } else {
-            $result++;
+            ++$result;
         }
 
         if ($high % 2 === 0) {
-            $high++;
+            ++$high;
         } else {
-            $result++;
+            ++$result;
         }
 
         return $result + ($high - $low) / 2 - 1;

@@ -8,7 +8,7 @@ use App\Model\ListNode;
 
 /**
  * https://leetcode.com/problems/merge-two-sorted-lists/
- * 57.91/99.54
+ * 57.91/99.54.
  */
 final class Task21
 {

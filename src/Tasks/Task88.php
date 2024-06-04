@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/merge-sorted-array/
- * 57.78/80
+ * 57.78/80.
  */
 final class Task88
 {
@@ -23,10 +23,10 @@ final class Task88
         while ($i < $m || $j < $n) {
             if ($j >= $n || ($i < $m && $nums1[$i] < $nums2[$j])) {
                 $result[] = $nums1[$i];
-                $i++;
+                ++$i;
             } else {
                 $result[] = $nums2[$j];
-                $j++;
+                ++$j;
             }
         }
 

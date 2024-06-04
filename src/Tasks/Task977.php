@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/squares-of-a-sorted-array/
- * 97.33/5.35
+ * 97.33/5.35.
  */
 final class Task977
 {
@@ -35,7 +35,7 @@ final class Task977
             $num = $nums[$i];
 
             if ($num < 0) {
-                $i++;
+                ++$i;
                 $this->process($result, $nums, $i, abs($num));
                 $result[] = $num * $num;
                 continue;
@@ -46,7 +46,7 @@ final class Task977
             }
 
             $result[] = $num * $num;
-            $i++;
+            ++$i;
         }
     }
 }

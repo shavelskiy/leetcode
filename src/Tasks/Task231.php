@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/power-of-two/
- * 29.58/5.63
+ * 29.58/5.63.
  */
 final class Task231
 {

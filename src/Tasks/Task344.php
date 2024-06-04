@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/reverse-string/
- * 81.77/74.88
+ * 81.77/74.88.
  */
 final class Task344
 {
@@ -18,7 +18,7 @@ final class Task344
         $n = count($s);
         $count = intdiv($n, 2);
 
-        for ($i = 0; $i < $count; $i++) {
+        for ($i = 0; $i < $count; ++$i) {
             $tmp = $s[$n - 1 - $i];
             $s[$n - 1 - $i] = $s[$i];
             $s[$i] = $tmp;

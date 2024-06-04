@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/count-sub-islands/
- * 50/100
+ * 50/100.
  */
 final class Task1905
 {
@@ -20,8 +20,8 @@ final class Task1905
         $m = count($grid2[0]);
 
         $result = 0;
-        for ($i = 0; $i < $n; $i++) {
-            for ($j = 0; $j < $m; $j++) {
+        for ($i = 0; $i < $n; ++$i) {
+            for ($j = 0; $j < $m; ++$j) {
                 if ($grid2[$i][$j] === 0) {
                     continue;
                 }
@@ -29,7 +29,7 @@ final class Task1905
                 $has = true;
                 $this->process($grid2, $grid1, $has, $i, $j);
                 if ($has) {
-                    $result++;
+                    ++$result;
                 }
             }
         }

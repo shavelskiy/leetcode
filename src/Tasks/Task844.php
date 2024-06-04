@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/backspace-string-compare/
- * 91.18/94.12
+ * 91.18/94.12.
  */
 final class Task844
 {
@@ -19,11 +19,11 @@ final class Task844
     {
         $skip = 0;
         $result = '';
-        for ($i = strlen($s) - 1; $i >= 0; $i--) {
+        for ($i = strlen($s) - 1; $i >= 0; --$i) {
             if ($s[$i] === '#') {
-                $skip++;
+                ++$skip;
             } elseif ($skip > 0) {
-                $skip--;
+                --$skip;
             } else {
                 $result .= $s[$i];
             }

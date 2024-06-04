@@ -8,7 +8,7 @@ use App\Model\ListNode;
 
 /**
  * https://leetcode.com/problems/remove-duplicates-from-sorted-list/
- * 46.67/88.67
+ * 46.67/88.67.
  */
 final class Task83
 {

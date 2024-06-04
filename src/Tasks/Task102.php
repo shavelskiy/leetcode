@@ -8,7 +8,7 @@ use App\Model\TreeNode;
 
 /**
  * https://leetcode.com/problems/binary-tree-level-order-traversal/
- * 90.28/26.39
+ * 90.28/26.39.
  */
 final class Task102
 {

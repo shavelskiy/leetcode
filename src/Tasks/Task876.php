@@ -8,7 +8,7 @@ use App\Model\ListNode;
 
 /**
  * https://leetcode.com/problems/middle-of-the-linked-list/
- * 45.94/61.48
+ * 45.94/61.48.
  */
 final class Task876
 {
@@ -17,7 +17,7 @@ final class Task876
         $i = 0;
         while ($i < $this->getLenght($head)) {
             $head = $head->next;
-            $i++;
+            ++$i;
         }
 
         return $head;
@@ -28,7 +28,7 @@ final class Task876
         $result = 0;
         while ($head->next !== null) {
             $head = $head->next;
-            $result++;
+            ++$result;
         }
 
         return $result;

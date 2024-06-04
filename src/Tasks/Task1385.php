@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/find-the-distance-value-between-two-arrays/
- * 20/40
+ * 20/40.
  */
 final class Task1385
 {
@@ -23,7 +23,7 @@ final class Task1385
         $result = 0;
         foreach ($arr1 as $item) {
             if ($this->isValid($item, $arr2, $n, $d)) {
-                $result++;
+                ++$result;
             }
         }
 

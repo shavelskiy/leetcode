@@ -8,7 +8,7 @@ use App\Model\TreeNode;
 
 /**
  * https://leetcode.com/problems/same-tree
- * 91.00/76.00
+ * 91.00/76.00.
  */
 final class Task100
 {

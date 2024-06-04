@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/determine-if-string-halves-are-alike/submissions/
- * 100/62.5
+ * 100/62.5.
  */
 final class Task1704
 {
@@ -18,7 +18,7 @@ final class Task1704
         $k = $lengh / 2;
 
         $result = 0;
-        for ($i = 0; $i < $k; $i++) {
+        for ($i = 0; $i < $k; ++$i) {
             $result += in_array(strtolower($s[$i]), self::VOWES, true) ? 1 : -1;
             $result += in_array(strtolower($s[$lengh - $i - 1]), self::VOWES, true) ? -1 : 1;
         }

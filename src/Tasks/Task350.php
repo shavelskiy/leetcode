@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/intersection-of-two-arrays-ii/
- * 78.38/66.22
+ * 78.38/66.22.
  */
 final class Task350
 {
@@ -31,7 +31,7 @@ final class Task350
             }
 
             $result[] = $num;
-            $map[$num]--;
+            --$map[$num];
         }
 
         return $result;

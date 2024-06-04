@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/min-cost-climbing-stairs/
- * 52.83/92.45
+ * 52.83/92.45.
  */
 final class Task746
 {
@@ -23,7 +23,7 @@ final class Task746
 
         $result = [0, 0];
 
-        for ($i = 2; $i <= $n; $i++) {
+        for ($i = 2; $i <= $n; ++$i) {
             $result = [
                 $result[1],
                 min($result[0] + $cost[$i - 2], $result[1] + $cost[$i - 1]),

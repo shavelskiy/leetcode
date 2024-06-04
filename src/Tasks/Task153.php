@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
- * 38.98/81.36
+ * 38.98/81.36.
  */
 final class Task153
 {

@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
- * 80.31/83.75
+ * 80.31/83.75.
  */
 final class Task121
 {

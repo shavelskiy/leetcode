@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Tasks;
 
 /**
- * https://leetcode.com/problems/combinations/
+ * https://leetcode.com/problems/combinations/.
  */
 final class Task77
 {

@@ -8,7 +8,7 @@ use App\Model\ListNode;
 
 /**
  * https://leetcode.com/problems/remove-nth-node-from-end-of-list/
- * 65.63/92.71
+ * 65.63/92.71.
  */
 final class Task19
 {
@@ -34,7 +34,7 @@ final class Task19
         $result = 0;
         while ($head !== null) {
             $head = $head->next;
-            $result++;
+            ++$result;
         }
 
         return $result;
@@ -42,7 +42,7 @@ final class Task19
 
     private function removeElement(ListNode $head, int $n): void
     {
-        for ($i = 1; $i < $n; $i++) {
+        for ($i = 1; $i < $n; ++$i) {
             $head = $head->next;
         }
 

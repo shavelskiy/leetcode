@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/reshape-the-matrix/
- * 62.50/87.5
+ * 62.50/87.5.
  */
 final class Task566
 {
@@ -24,8 +24,8 @@ final class Task566
         }
 
         $result = array_fill(0, $r, []);
-        for ($i = 0; $i < $n; $i++) {
-            for ($j = 0; $j < $m; $j++) {
+        for ($i = 0; $i < $n; ++$i) {
+            for ($j = 0; $j < $m; ++$j) {
                 $result[intdiv(($i * $m) + $j, $c)][] = $mat[$i][$j];
             }
         }

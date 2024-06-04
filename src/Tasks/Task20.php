@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/valid-parentheses/
- * 43.63/100
+ * 43.63/100.
  */
 final class Task20
 {
@@ -21,7 +21,7 @@ final class Task20
         $n = strlen($s);
         $stack = [];
 
-        for ($i = 0; $i < $n; $i++) {
+        for ($i = 0; $i < $n; ++$i) {
             if (in_array($s[$i], self::MAP, true)) {
                 $stack[] = $s[$i];
                 continue;

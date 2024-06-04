@@ -13,7 +13,7 @@ final class Task2366
     {
         $result = 0;
 
-        for ($i = count($nums) - 2; $i >= 0; $i--) {
+        for ($i = count($nums) - 2; $i >= 0; --$i) {
             if ($nums[$i] <= $nums[$i + 1]) {
                 continue;
             }

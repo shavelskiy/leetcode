@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/sort-integers-by-the-number-of-1-bits/
- * 50/75
+ * 50/75.
  */
 final class Task1356
 {

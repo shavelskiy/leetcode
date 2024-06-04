@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/course-schedule/
- * 23.8/76.92
+ * 23.8/76.92.
  */
 final class Task207
 {
@@ -16,7 +16,7 @@ final class Task207
     public function canFinish(int $numCourses, array $prerequisites): bool
     {
         $map = [];
-        for ($i = 0; $i < $numCourses; $i++) {
+        for ($i = 0; $i < $numCourses; ++$i) {
             $map[$i] = [];
         }
 

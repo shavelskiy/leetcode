@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/maximum-distance-between-a-pair-of-values/
- * 100/100
+ * 100/100.
  */
 final class Task1855
 {
@@ -27,9 +27,9 @@ final class Task1855
         while ($i < $n1 && $j < $n2) {
             if ($nums2[$j] >= $nums1[$i]) {
                 $max = max($max, $j - $i);
-                $j++;
+                ++$j;
             } else {
-                $i++;
+                ++$i;
                 if ($j < $i) {
                     $j = $i;
                 }

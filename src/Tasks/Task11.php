@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/container-with-most-water/
- * 70.23/12.98
+ * 70.23/12.98.
  */
 final class Task11
 {
@@ -22,9 +22,9 @@ final class Task11
         while ($i < $j) {
             $result = max($result, ($j - $i) * min($height[$i], $height[$j]));
             if ($height[$i] < $height[$j]) {
-                $i++;
+                ++$i;
             } else {
-                $j--;
+                --$j;
             }
         }
 

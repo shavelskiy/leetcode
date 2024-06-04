@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/triangle/
- * 61.45/100
+ * 61.45/100.
  */
 final class Task120
 {
@@ -15,8 +15,8 @@ final class Task120
      */
     public function minimumTotal(array $triangle): int
     {
-        for ($level = count($triangle) - 2; $level >= 0; $level--) {
-            for ($i = 0; $i <= $level; $i++) {
+        for ($level = count($triangle) - 2; $level >= 0; --$level) {
+            for ($i = 0; $i <= $level; ++$i) {
                 $triangle[$level][$i] += min(
                     $triangle[$level + 1][$i],
                     $triangle[$level + 1][$i + 1],

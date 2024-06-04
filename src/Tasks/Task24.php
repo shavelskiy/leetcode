@@ -8,7 +8,7 @@ use App\Model\ListNode;
 
 /**
  * https://leetcode.com/problems/swap-nodes-in-pairs/
- * 68.29/12.20
+ * 68.29/12.20.
  */
 final class Task24
 {

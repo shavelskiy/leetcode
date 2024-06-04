@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/isomorphic-strings/
- * 86.29/98.79
+ * 86.29/98.79.
  */
 final class Task205
 {
@@ -14,7 +14,7 @@ final class Task205
     {
         $map = [];
 
-        for ($i = 0; $i < strlen($s); $i++) {
+        for ($i = 0; $i < strlen($s); ++$i) {
             if (!isset($map[$s[$i]])) {
                 if (in_array($t[$i], $map, true)) {
                     return false;

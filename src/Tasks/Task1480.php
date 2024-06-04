@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/running-sum-of-1d-array/
- * 44.55/78.74
+ * 44.55/78.74.
  */
 final class Task1480
 {

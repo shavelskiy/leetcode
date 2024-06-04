@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/rotting-oranges/description/
- * 77.78/66.67
+ * 77.78/66.67.
  */
 final class Task994
 {
@@ -27,14 +27,14 @@ final class Task994
 
         $fresh = 0;
         $queue = [];
-        for ($i = 0; $i < $n; $i++) {
-            for ($j = 0; $j < $m; $j++) {
+        for ($i = 0; $i < $n; ++$i) {
+            for ($j = 0; $j < $m; ++$j) {
                 if ($grid[$i][$j] === 2) {
                     $queue[] = [$i, $j];
                 }
 
                 if ($grid[$i][$j] === 1) {
-                    $fresh++;
+                    ++$fresh;
                 }
             }
         }
@@ -42,7 +42,7 @@ final class Task994
         $days = 0;
         while (!empty($queue)) {
             $n = count($queue);
-            for ($k = 0; $k < $n; $k++) {
+            for ($k = 0; $k < $n; ++$k) {
                 [$i, $j] = array_shift($queue);
 
                 foreach (self::MOVES as $move) {
@@ -51,13 +51,13 @@ final class Task994
                     if (($grid[$i2][$j2] ?? null) === 1) {
                         $queue[] = [$i2, $j2];
                         $grid[$i2][$j2] = 2;
-                        $fresh--;
+                        --$fresh;
                     }
                 }
             }
 
             if (!empty($queue)) {
-                $days++;
+                ++$days;
             }
         }
 

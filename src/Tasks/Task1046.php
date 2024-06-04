@@ -8,7 +8,7 @@ use App\Model\Heap1046 as Heap;
 
 /**
  * https://leetcode.com/problems/last-stone-weight/
- * 96.30/18.52
+ * 96.30/18.52.
  */
 final class Task1046
 {

@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/sqrtx/
- * 47.56/31/18
+ * 47.56/31/18.
  */
 final class Task69
 {

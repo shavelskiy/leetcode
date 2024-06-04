@@ -8,7 +8,7 @@ use App\Model\TreeNode;
 
 /**
  * https://leetcode.com/problems/merge-two-binary-trees/
- * 65/90
+ * 65/90.
  */
 final class Task617
 {

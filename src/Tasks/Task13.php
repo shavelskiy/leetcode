@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/roman-to-integer/
- * 67.99/67.44
+ * 67.99/67.44.
  */
 final class Task13
 {
@@ -34,7 +34,7 @@ final class Task13
             }
 
             $result += $map[$s[$i]];
-            $i++;
+            ++$i;
         }
 
         return $result;

@@ -8,7 +8,7 @@ use App\Model\ListNode;
 
 /**
  * https://leetcode.com/problems/linked-list-cycle-ii/
- * 52.98/67.55
+ * 52.98/67.55.
  */
 final class Task142
 {

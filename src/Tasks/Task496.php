@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/next-greater-element-i/
- * 13.79/20.69
+ * 13.79/20.69.
  */
 final class Task496
 {
@@ -23,12 +23,12 @@ final class Task496
         $n = count($nums1);
         $m = count($nums2);
 
-        for ($i = 0; $i < $n; $i++) {
+        for ($i = 0; $i < $n; ++$i) {
             $current = $nums1[$i];
 
             $find = false;
             $max = -1;
-            for ($j = 0; $j < $m; $j++) {
+            for ($j = 0; $j < $m; ++$j) {
                 if ($nums2[$j] === $current) {
                     $find = true;
                     continue;

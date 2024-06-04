@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/bulls-and-cows/
- * 47.37/21.5
+ * 47.37/21.5.
  */
 final class Task299
 {
@@ -14,7 +14,7 @@ final class Task299
     {
         $map = [];
         $guessMap = [];
-        for ($i = strlen($secret) - 1; $i >= 0; $i--) {
+        for ($i = strlen($secret) - 1; $i >= 0; --$i) {
             if (!isset($map[$secret[$i]])) {
                 $map[$secret[$i]] = [];
             }
@@ -39,7 +39,7 @@ final class Task299
             $curA = 0;
             foreach ($map[$num] as $position) {
                 if (in_array($position, $value, true)) {
-                    $curA++;
+                    ++$curA;
                 }
             }
 

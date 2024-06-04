@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/pascals-triangle/
- * 75/66.30
+ * 75/66.30.
  */
 final class Task118
 {
@@ -21,9 +21,9 @@ final class Task118
             return $result;
         }
 
-        for ($i = 1; $i < $numRows; $i++) {
+        for ($i = 1; $i < $numRows; ++$i) {
             $prev = $result[$i - 1];
-            for ($j = 1; $j <= $i; $j++) {
+            for ($j = 1; $j <= $i; ++$j) {
                 $result[$i][$j] = $i === $j ? 1 : $prev[$j - 1] + $prev[$j];
             }
         }

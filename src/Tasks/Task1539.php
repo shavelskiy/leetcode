@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/kth-missing-positive-number/
- * 55/30
+ * 55/30.
  */
 final class Task1539
 {

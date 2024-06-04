@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/reverse-words-in-a-string-iii/
- * 53.62/57.97
+ * 53.62/57.97.
  */
 final class Task557
 {

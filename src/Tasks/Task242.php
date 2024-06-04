@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/valid-anagram/
- * 78.42/97.89
+ * 78.42/97.89.
  */
 final class Task242
 {
@@ -19,7 +19,7 @@ final class Task242
         }
 
         $map = [];
-        for ($i = 0; $i < $n; $i++) {
+        for ($i = 0; $i < $n; ++$i) {
             $map[$s[$i]] = ($map[$s[$i]] ?? 0) + 1;
             $map[$t[$i]] = ($map[$t[$i]] ?? 0) - 1;
         }

@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/number-of-even-and-odd-bits/
- * 40/70
+ * 40/70.
  */
 final class Task2598
 {
@@ -24,16 +24,16 @@ final class Task2598
             $n = intdiv($n, 2);
 
             if ($kek !== 1) {
-                $i++;
+                ++$i;
                 continue;
             }
 
             if ($i % 2 === 0) {
-                $even++;
+                ++$even;
             } else {
-                $odd++;
+                ++$odd;
             }
-            $i++;
+            ++$i;
         }
 
         return [$even, $odd];

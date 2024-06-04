@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/sign-of-the-product-of-an-array/
- * 40.91/9.9
+ * 40.91/9.9.
  */
 final class Task1822
 {

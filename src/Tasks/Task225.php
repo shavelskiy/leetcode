@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/implement-stack-using-queues/
- * 83.33/66.67
+ * 83.33/66.67.
  */
 final class Task225
 {
@@ -16,7 +16,7 @@ final class Task225
     public function push(int $x): void
     {
         $this->values[] = $x;
-        $this->length++;
+        ++$this->length;
     }
 
     public function pop(): ?int
@@ -25,7 +25,7 @@ final class Task225
             return null;
         }
 
-        $this->length--;
+        --$this->length;
         return array_pop($this->values);
     }
 

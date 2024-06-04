@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/merge-strings-alternately/
- * 35.71/92.86
+ * 35.71/92.86.
  */
 final class Task1768
 {
@@ -20,17 +20,17 @@ final class Task1768
 
         while ($i < $n1 && $i < $n2) {
             $result .= $word1[$i] . $word2[$i];
-            $i++;
+            ++$i;
         }
 
         while ($i < $n1) {
             $result .= $word1[$i];
-            $i++;
+            ++$i;
         }
 
         while ($i < $n2) {
             $result .= $word2[$i];
-            $i++;
+            ++$i;
         }
 
         return $result;

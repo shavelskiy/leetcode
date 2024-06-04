@@ -16,7 +16,7 @@ final class Task141Test extends TestCase
 
         $data = new ListNode(3, new ListNode(2, new ListNode(0, new ListNode(4))));
         $copyData = $data;
-        for ($i = 0; $i < 3; $i++) {
+        for ($i = 0; $i < 3; ++$i) {
             if ($copyData->next !== null) {
                 $copyData = $copyData->next;
             }
@@ -27,7 +27,7 @@ final class Task141Test extends TestCase
 
         $data = new ListNode(1, new ListNode(2));
         $copyData = $data;
-        for ($i = 0; $i < 1; $i++) {
+        for ($i = 0; $i < 1; ++$i) {
             if ($copyData->next !== null) {
                 $copyData = $copyData->next;
             }

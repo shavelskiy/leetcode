@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/single-number/
- * 24.24/19.5
+ * 24.24/19.5.
  */
 final class Task136
 {

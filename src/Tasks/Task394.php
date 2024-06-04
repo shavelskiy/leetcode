@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/decode-string/
- * 91.67/66.67
+ * 91.67/66.67.
  */
 final class Task394
 {
@@ -18,7 +18,7 @@ final class Task394
 
         $n = strlen($s);
 
-        for ($i = 0; $i < $n; $i++) {
+        for ($i = 0; $i < $n; ++$i) {
             $char = $s[$i];
 
             if ($char === '[') {

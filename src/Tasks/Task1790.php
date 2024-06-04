@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/check-if-one-string-swap-can-make-strings-equal/
- * 92.31/84.62
+ * 92.31/84.62.
  */
 final class Task1790
 {
@@ -15,7 +15,7 @@ final class Task1790
         $n = strlen($s1);
 
         $swap = [];
-        for ($i = 0; $i < $n; $i++) {
+        for ($i = 0; $i < $n; ++$i) {
             if ($s1[$i] === $s2[$i]) {
                 continue;
             }

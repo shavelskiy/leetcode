@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
- * 76.60/98.94
+ * 76.60/98.94.
  */
 final class Task122
 {
@@ -16,7 +16,7 @@ final class Task122
     public function maxProfit(array $prices): int
     {
         $result = 0;
-        for ($i = 1; $i < count($prices); $i++) {
+        for ($i = 1; $i < count($prices); ++$i) {
             if ($prices[$i] > $prices[$i - 1]) {
                 $result += $prices[$i] - $prices[$i - 1];
             }

@@ -8,7 +8,7 @@ use App\Model\MultiNode as Node;
 
 /**
  * https://leetcode.com/problems/n-ary-tree-preorder-traversal/
- * 16.48/93.41
+ * 16.48/93.41.
  */
 final class Task589
 {

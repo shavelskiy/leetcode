@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/longest-valid-parentheses/
- * 80/80
+ * 80/80.
  */
 final class Task32
 {
@@ -17,9 +17,9 @@ final class Task32
         $count = 0;
         $stack = [];
 
-        for ($i = 0; $i < strlen($s); $i++) {
+        for ($i = 0; $i < strlen($s); ++$i) {
             if ($s[$i] === '(') {
-                $count++;
+                ++$count;
                 $stack[] = false;
                 continue;
             }
@@ -32,9 +32,9 @@ final class Task32
                 $stack = [];
                 continue;
             }
-            $count--;
+            --$count;
 
-            for ($j = count($stack) - 1; $j >= 0; $j--) {
+            for ($j = count($stack) - 1; $j >= 0; --$j) {
                 if ($stack[$j] === false) {
                     $stack[$j] = true;
                     break;
@@ -54,7 +54,7 @@ final class Task32
         $current = 0;
         foreach ($stack as $item) {
             if ($item === true) {
-                $current++;
+                ++$current;
                 continue;
             }
 

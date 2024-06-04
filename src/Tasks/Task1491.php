@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-salary/
- * 79.22/89.61
+ * 79.22/89.61.
  */
 final class Task1491
 {

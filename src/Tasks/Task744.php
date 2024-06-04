@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/find-smallest-letter-greater-than-target/
- * 45/70
+ * 45/70.
  */
 final class Task744
 {

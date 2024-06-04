@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/range-sum-query-immutable/
- * 77.78/61.11
+ * 77.78/61.11.
  */
 final class Task303
 {

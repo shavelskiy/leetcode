@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/coin-change/
- * 51.52/72.3
+ * 51.52/72.3.
  */
 final class Task322
 {
@@ -18,7 +18,7 @@ final class Task322
         /** @var int[] */
         $map = [0];
 
-        for ($i = 1; $i <= $amount; $i++) {
+        for ($i = 1; $i <= $amount; ++$i) {
             $map[$i] = null;
             foreach ($coins as $coin) {
                 $prevValue = $map[$i - $coin] ?? null;

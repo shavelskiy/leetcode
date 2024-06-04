@@ -8,7 +8,7 @@ use App\Model\TreeNode;
 
 /**
  * https://leetcode.com/problems/sum-root-to-leaf-numbers/
- * 72.46/50.72
+ * 72.46/50.72.
  */
 final class Task129
 {

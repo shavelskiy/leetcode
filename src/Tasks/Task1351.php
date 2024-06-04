@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix/
- * 68.75/12.50
+ * 68.75/12.50.
  */
 final class Task1351
 {

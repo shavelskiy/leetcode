@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/description/
- * 40.54/59.46
+ * 40.54/59.46.
  */
 final class Task1281
 {

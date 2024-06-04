@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/arranging-coins/
- * 88.24/58.82
+ * 88.24/58.82.
  */
 final class Task441
 {

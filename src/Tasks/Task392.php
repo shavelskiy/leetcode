@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/is-subsequence/
- * 95.63/53.88
+ * 95.63/53.88.
  */
 final class Task392
 {
@@ -18,12 +18,12 @@ final class Task392
 
         $i = 0;
 
-        for ($j = 0; $j < strlen($t); $j++) {
+        for ($j = 0; $j < strlen($t); ++$j) {
             if ($t[$j] !== $s[$i]) {
                 continue;
             }
 
-            $i++;
+            ++$i;
             if ($i === strlen($s)) {
                 return true;
             }

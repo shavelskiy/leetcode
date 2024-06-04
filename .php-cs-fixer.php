@@ -9,20 +9,24 @@ $finder = PhpCsFixer\Finder::create()
 return (new PhpCsFixer\Config())
     ->setCacheFile(__DIR__ . '/var/.php-cs-fixer.cache')
     ->setRules([
+                '@Symfony' => true,
         '@PSR2' => true,
         '@PhpCsFixer' => true,
-        'php_unit_test_class_requires_covers' => false,
-        'php_unit_internal_class' => false,
-        'increment_style' => ['style' => 'post'],
+        '@DoctrineAnnotation' => true,
         'array_syntax' => ['syntax' => 'short'],
         'yoda_style' => false,
         'concat_space' => ['spacing' => 'one'],
         'cast_spaces' => ['space' => 'none'],
         'blank_line_before_statement' => false,
+        'class_attributes_separation' => false,
+        'no_superfluous_phpdoc_tags' => false,
         'single_line_comment_style' => false,
         'declare_strict_types' => true,
         'global_namespace_import' => true,
+        'single_line_empty_body' => false,
         'final_class' => true,
-        'phpdoc_summary' => false,
+        'phpdoc_to_comment' => ['ignored_tags' => ['var']],
+        'php_unit_internal_class' => false,
+        'php_unit_test_class_requires_covers' => false,
     ])
     ->setFinder($finder);

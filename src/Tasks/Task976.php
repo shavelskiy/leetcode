@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/largest-perimeter-triangle/
- * 66.67/81.48
+ * 66.67/81.48.
  */
 final class Task976
 {
@@ -17,7 +17,7 @@ final class Task976
     {
         sort($nums);
 
-        for ($i = count($nums) - 1; $i > 1; $i--) {
+        for ($i = count($nums) - 1; $i > 1; --$i) {
             if ($nums[$i] < $nums[$i - 1] + $nums[$i - 2]) {
                 return $nums[$i] + $nums[$i - 1] + $nums[$i - 2];
             }

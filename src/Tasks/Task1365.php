@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/
- * 100/100
+ * 100/100.
  */
 final class Task1365
 {
@@ -24,7 +24,7 @@ final class Task1365
                 $map[$num] = 0;
             }
 
-            $map[$num]++;
+            ++$map[$num];
         }
 
         ksort($map);

@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/permutations/
- * 23.73.22.3
+ * 23.73.22.3.
  */
 final class Task46
 {
@@ -28,7 +28,7 @@ final class Task46
 
             $i = $n - 1;
             while ($i >= 0 && $current[$i] > $current[$i + 1]) {
-                $i--;
+                --$i;
             }
 
             if ($i < 0) {
@@ -37,7 +37,7 @@ final class Task46
 
             $j = $n;
             while ($current[$j] < $current[$i]) {
-                $j--;
+                --$j;
             }
 
             $tmp = $current[$i];

@@ -6,7 +6,7 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/valid-perfect-square/
- * 70.97/100
+ * 70.97/100.
  */
 final class Task367
 {
