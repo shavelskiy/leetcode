@@ -12,13 +12,13 @@ install:
 check-autoload:
 	composer dump-autoload --strict-psr
 
-php-fixer:
+code-style:
 	composer php-cs-fixer fix -- --allow-risky=yes
 
 test:
 	composer phpunit
 
-pre-commit: check-autoload php-fixer phpunit
+pre-commit: check-autoload code-style test
 
 db:
 	docker-compose exec db mysql -uroot -psecret
