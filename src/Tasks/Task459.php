@@ -6,14 +6,14 @@ namespace App\Tasks;
 
 /**
  * https://leetcode.com/problems/repeated-substring-pattern/
- * 90.00/70.00
+ * 90.00/70.00.
  */
 final class Task459
 {
-    function repeatedSubstringPattern(string $s): bool
+    public function repeatedSubstringPattern(string $s): bool
     {
         $n = strlen($s);
-        for ($i = (int)($n / 2); $i > 0; $i--) {
+        for ($i = (int)($n / 2); $i > 0; --$i) {
             if ($n % $i !== 0) {
                 continue;
             }

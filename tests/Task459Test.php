@@ -28,4 +28,3 @@ final class Task459Test extends TestCase
         ];
     }
 }
-
