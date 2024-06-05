@@ -11,17 +11,17 @@ final class Task50Test extends TestCase
     /**
      * @dataProvider dataProvider
      */
-    public function test50(int $a, int $result): void
+    public function test50(float $x, int $n, float $result): void
     {
         $sut = new Task50();
 
-        self::assertSame($a, $result);
+        self::assertSame($sut->myPow($x, $n), $result);
     }
 
     public static function dataProvider(): array
     {
         return [
-            [1, 1],
+            [2.0, -2, -4.0],
         ];
     }
 }

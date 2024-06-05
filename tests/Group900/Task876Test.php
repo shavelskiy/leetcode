@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace App\Tasks\Group900;
 
 use App\Model\ListNode;
-use App\Tasks\Group900\Task876;
 use PHPUnit\Framework\TestCase;
 
 final class Task876Test extends TestCase

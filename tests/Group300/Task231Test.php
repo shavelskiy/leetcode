@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace App\Tasks\Group300;
 
-use App\Tasks\Group300\Task231;
 use PHPUnit\Framework\TestCase;
 
 final class Task231Test extends TestCase
@@ -28,4 +27,3 @@ final class Task231Test extends TestCase
         ];
     }
 }
-
