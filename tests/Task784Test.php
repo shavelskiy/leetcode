@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Tests;
 
-use App\Tasks\Task784;
+use App\Tasks\Group800\Task784;
 use PHPUnit\Framework\TestCase;
 
 final class Task784Test extends TestCase
@@ -16,8 +16,6 @@ final class Task784Test extends TestCase
     {
         $sut = new Task784();
 
-        // dd($sut->letterCasePermutation($s));
-
         self::assertSame($sut->letterCasePermutation($s), $result);
     }
 
@@ -25,8 +23,8 @@ final class Task784Test extends TestCase
     {
         return [
             ['C', ['C', 'c']],
-            // ['a1b2', ['a1b2', 'a1B2', 'A1b2', 'A1B2']],
-            // ['3z4', ['3z4', '3Z4']],
+            ['a1b2', ['a1b2', 'a1B2', 'A1b2', 'A1B2']],
+            ['3z4', ['3z4', '3Z4']],
         ];
     }
 }

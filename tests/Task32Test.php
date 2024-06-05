@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Tests;
 
-use App\Tasks\Task32;
+use App\Tasks\Group100\Task32;
 use PHPUnit\Framework\TestCase;
 
 final class Task32Test extends TestCase
@@ -16,9 +16,7 @@ final class Task32Test extends TestCase
     {
         $sut = new Task32();
 
-        // $time = microtime(true) * 1000;
         self::assertSame($sut->longestValidParentheses($s), $result);
-        // dd(microtime(true) * 1000 - $time);
     }
 
     public static function dataProvider(): array

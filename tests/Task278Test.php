@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Tests;
 
-use App\Tasks\Task278;
+use App\Tasks\Group300\Task278;
 use PHPUnit\Framework\TestCase;
 
 /**

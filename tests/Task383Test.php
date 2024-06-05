@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Tests;
 
-use App\Tasks\Task383;
+use App\Tasks\Group400\Task383;
 use PHPUnit\Framework\TestCase;
 
 final class Task383Test extends TestCase

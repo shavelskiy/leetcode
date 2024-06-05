@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Tests;
 
 use App\Model\ListNode;
-use App\Tasks\Task1290;
+use App\Tasks\Group1300\Task1290;
 use PHPUnit\Framework\TestCase;
 
 final class Task1290Test extends TestCase

@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Tests;
 
 use App\Model\ListNode;
-use App\Tasks\Task25;
+use App\Tasks\Group100\Task25;
 use PHPUnit\Framework\TestCase;
 
 final class Task25Test extends TestCase

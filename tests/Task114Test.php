@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Tests;
 
 use App\Model\TreeNode;
-use App\Tasks\Task114;
+use App\Tasks\Group200\Task114;
 use PHPUnit\Framework\TestCase;
 
 final class Task114Test extends TestCase

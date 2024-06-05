@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Tests;
 
 use App\Model\MultiNode;
-use App\Tasks\Task589;
+use App\Tasks\Group600\Task589;
 use PHPUnit\Framework\TestCase;
 
 final class Task589Test extends TestCase
