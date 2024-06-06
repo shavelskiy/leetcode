@@ -11,17 +11,19 @@ final class Task345Test extends TestCase
     /**
      * @dataProvider dataProvider
      */
-    public function test345(int $a, int $result): void
+    public function test345(string $s, string $result): void
     {
         $sut = new Task345();
 
-        self::assertSame($a, $result);
+        self::assertSame($sut->reverseVowels($s), $result);
     }
 
     public static function dataProvider(): array
     {
         return [
-            [1, 1],
+            ['hello', 'holle'],
+            ['leetcode', 'leotcede'],
+            ['race car', 'race car'],
         ];
     }
 }
