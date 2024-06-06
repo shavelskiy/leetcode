@@ -11,17 +11,19 @@ final class Task151Test extends TestCase
     /**
      * @dataProvider dataProvider
      */
-    public function test151(int $a, int $result): void
+    public function test151(string $s, string $result): void
     {
         $sut = new Task151();
 
-        self::assertSame($a, $result);
+        self::assertSame($sut->reverseWords($s), $result);
     }
 
     public static function dataProvider(): array
     {
         return [
-            [1, 1],
+            ['the sky is blue', 'blue is sky the'],
+            ['  hello world  ', 'world hello'],
+            ['a good   example', 'example good a'],
         ];
     }
 }

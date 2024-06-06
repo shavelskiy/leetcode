@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Tasks\Group1300;
 
 /**
- * https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/description/
+ * https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/
  * 40.54/59.46.
  */
 final class Task1281

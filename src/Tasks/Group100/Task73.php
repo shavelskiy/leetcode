@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Tasks\Group100;
 
 /**
- * https://leetcode.com/problems/set-matrix-zeroes/description/
+ * https://leetcode.com/problems/set-matrix-zeroes/
  * 63.25/42.31.
  */
 final class Task73

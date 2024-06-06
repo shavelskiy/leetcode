@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Tasks\Group1500;
 
 /**
- * https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/description/.
+ * https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/
  * 19.21/97.18.
  */
 final class Task1431

@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Tasks\Group1300;
 
 /**
- * https://leetcode.com/problems/find-winner-on-a-tic-tac-toe-game/description/
+ * https://leetcode.com/problems/find-winner-on-a-tic-tac-toe-game/
  * 100/100.
  */
 final class Task1275

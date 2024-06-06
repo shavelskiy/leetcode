@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Tasks\Group700;
 
 /**
- * https://leetcode.com/problems/baseball-game/description/
+ * https://leetcode.com/problems/baseball-game/
  * 100.00/80.77.
  */
 final class Task682

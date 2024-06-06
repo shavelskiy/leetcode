@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Tasks\Group400;
 
 /**
- * https://leetcode.com/problems/ransom-note/description/
+ * https://leetcode.com/problems/ransom-note/
  * 92.36/79.17.
  */
 final class Task383

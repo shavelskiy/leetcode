@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Tasks\Group1100;
 
 /**
- * https://leetcode.com/problems/robot-bounded-in-circle/description/
+ * https://leetcode.com/problems/robot-bounded-in-circle/
  * 100/66.67.
  */
 final class Task1041

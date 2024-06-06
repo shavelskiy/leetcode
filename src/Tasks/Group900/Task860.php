@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Tasks\Group900;
 
 /**
- * https://leetcode.com/problems/lemonade-change/description/
+ * https://leetcode.com/problems/lemonade-change/
  * 55.56/44.44.
  */
 final class Task860

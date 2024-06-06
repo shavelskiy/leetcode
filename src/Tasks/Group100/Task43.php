@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Tasks\Group100;
 
 /**
- * https://leetcode.com/problems/multiply-strings/description/
+ * https://leetcode.com/problems/multiply-strings/
  * 14.29/50.00.
  */
 final class Task43

@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Tasks\Group100;
 
 /**
- * https://leetcode.com/problems/spiral-matrix/description/
+ * https://leetcode.com/problems/spiral-matrix/
  * 84.06/24.64.
  */
 final class Task54

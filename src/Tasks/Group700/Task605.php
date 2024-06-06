@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Tasks\Group700;
 
 /**
- * https://leetcode.com/problems/can-place-flowers/description/.
+ * https://leetcode.com/problems/can-place-flowers/
  * 92.00/90.40.
  */
 final class Task605

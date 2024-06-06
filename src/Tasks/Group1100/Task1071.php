@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Tasks\Group1100;
 
 /**
- * https://leetcode.com/problems/greatest-common-divisor-of-strings/description/.
+ * https://leetcode.com/problems/greatest-common-divisor-of-strings/.
  */
 final class Task1071
 {

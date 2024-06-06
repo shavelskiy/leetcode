@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Tasks\Group1000;
 
 /**
- * https://leetcode.com/problems/rotting-oranges/description/
+ * https://leetcode.com/problems/rotting-oranges/
  * 77.78/66.67.
  */
 final class Task994

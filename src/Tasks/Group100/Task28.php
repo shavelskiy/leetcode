@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Tasks\Group100;
 
 /**
- * https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/
+ * https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/
  * 51.42/95.09.
  */
 final class Task28

@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Tasks\Group1700;
 
 /**
- * https://leetcode.com/problems/richest-customer-wealth/description/
+ * https://leetcode.com/problems/richest-customer-wealth/
  * 33.22/23.83.
  */
 final class Task1672

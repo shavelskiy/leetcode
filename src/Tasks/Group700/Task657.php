@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Tasks\Group700;
 
 /**
- * https://leetcode.com/problems/robot-return-to-origin/description/
+ * https://leetcode.com/problems/robot-return-to-origin/
  * 87.60/87.50.
  */
 final class Task657
