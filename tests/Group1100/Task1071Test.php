@@ -11,17 +11,19 @@ final class Task1071Test extends TestCase
     /**
      * @dataProvider dataProvider
      */
-    public function test1071(int $a, int $result): void
+    public function test1071(string $str1, string $str2, string $result): void
     {
         $sut = new Task1071();
 
-        self::assertSame($a, $result);
+        self::assertSame($sut->gcdOfStrings($str1, $str2), $result);
     }
 
     public static function dataProvider(): array
     {
         return [
-            [1, 1],
+            ['ABCABC', 'ABC', 'ABC'],
+            ['ABABAB', 'ABAB', 'AB'],
+            ['LEET', 'CODE', ''],
         ];
     }
 }
