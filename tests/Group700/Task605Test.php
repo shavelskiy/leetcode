@@ -10,18 +10,21 @@ final class Task605Test extends TestCase
 {
     /**
      * @dataProvider dataProvider
+     *
+     * @param int[] $flowerbed
      */
-    public function test605(int $a, int $result): void
+    public function test605(array $flowerbed, int $n, bool $result): void
     {
         $sut = new Task605();
 
-        self::assertSame($a, $result);
+        self::assertSame($sut->canPlaceFlowers($flowerbed, $n), $result);
     }
 
     public static function dataProvider(): array
     {
         return [
-            [1, 1],
+            [[1, 0, 0, 0, 1], 1, true],
+            [[1, 0, 0, 0, 1], 2, false],
         ];
     }
 }
