@@ -6,7 +6,7 @@ namespace App\Tasks\Group1100;
 
 /**
  * https://leetcode.com/problems/max-consecutive-ones-iii/.
- * 13.51/91.89.
+ * 37.84/91.89.
  */
 final class Task1004
 {
@@ -32,7 +32,7 @@ final class Task1004
                 ++$left;
             }
 
-            if ($k >= 0 && $right - $left > $max) {
+            if ($k >= 0 && $right >= $left && ($right - $left > $max || $max === null)) {
                 $max = $right - $left;
                 if ($n - $left < $max) {
                     break;
@@ -40,6 +40,6 @@ final class Task1004
             }
         }
 
-        return ($max ?? 0) + 1;
+        return ($max ?? -1) + 1;
     }
 }
