@@ -11,17 +11,19 @@ final class Task1456Test extends TestCase
     /**
      * @dataProvider dataProvider
      */
-    public function test1456(int $a, int $result): void
+    public function test1456(string $s, int $k, int $result): void
     {
         $sut = new Task1456();
 
-        self::assertSame($a, $result);
+        self::assertSame($sut->maxVowels($s, $k), $result);
     }
 
     public static function dataProvider(): array
     {
         return [
-            [1, 1],
+            ['abciiidef', 3, 3],
+            ['aeiou', 2, 2],
+            ['leetcode', 3, 2],
         ];
     }
 }
