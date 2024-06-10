@@ -12,6 +12,13 @@ final class ListNode
     ) {
     }
 
+    public static function fromArray(array $nums): self
+    {
+        $val = array_shift($nums);
+
+        return new self($val, !empty($nums) ? self::fromArray($nums) : null);
+    }
+
     public function toArray(): array
     {
         $result = [];

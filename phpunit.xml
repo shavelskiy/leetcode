@@ -4,6 +4,7 @@
   xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.0/phpunit.xsd"
   backupGlobals="false"
   colors="true"
+  displayDetailsOnTestsThatTriggerWarnings="true"
   cacheDirectory="./var/.phpunit.cache"
 >
   <php>
