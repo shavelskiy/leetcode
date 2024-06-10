@@ -11,17 +11,20 @@ final class Task649Test extends TestCase
     /**
      * @dataProvider dataProvider
      */
-    public function test649(int $a, int $result): void
+    public function test649(string $senate, string $result): void
     {
         $sut = new Task649();
 
-        self::assertSame($a, $result);
+        self::assertSame($sut->predictPartyVictory($senate), $result);
     }
 
     public static function dataProvider(): array
     {
         return [
-            [1, 1],
+            ['DRRDRDRDRDDRDRDR', 'Radiant'],
+            ['DRDRR', 'Dire'],
+            ['RD', 'Radiant'],
+            ['RDD', 'Dire'],
         ];
     }
 }
