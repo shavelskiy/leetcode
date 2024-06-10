@@ -11,17 +11,18 @@ final class Task2390Test extends TestCase
     /**
      * @dataProvider dataProvider
      */
-    public function test2390(int $a, int $result): void
+    public function test2390(string $s, string $result): void
     {
         $sut = new Task2390();
 
-        self::assertSame($a, $result);
+        self::assertSame($sut->removeStars($s), $result);
     }
 
     public static function dataProvider(): array
     {
         return [
-            [1, 1],
+            ['leet**cod*e', 'lecoe'],
+            ['erase*****', ''],
         ];
     }
 }
