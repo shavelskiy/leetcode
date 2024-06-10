@@ -8,20 +8,13 @@ use PHPUnit\Framework\TestCase;
 
 final class Task933Test extends TestCase
 {
-    /**
-     * @dataProvider dataProvider
-     */
-    public function test933(int $a, int $result): void
+    public function test933(): void
     {
         $sut = new Task933();
 
-        self::assertSame($a, $result);
-    }
-
-    public static function dataProvider(): array
-    {
-        return [
-            [1, 1],
-        ];
+        self::assertSame($sut->ping(1), 1);
+        self::assertSame($sut->ping(100), 2);
+        self::assertSame($sut->ping(3001), 3);
+        self::assertSame($sut->ping(3002), 3);
     }
 }
