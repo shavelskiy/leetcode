@@ -10,18 +10,21 @@ final class Task841Test extends TestCase
 {
     /**
      * @dataProvider dataProvider
+     *
+     * @param array<int[]> $rooms
      */
-    public function test841(int $a, int $result): void
+    public function test841(array $rooms, bool $result): void
     {
         $sut = new Task841();
 
-        self::assertSame($a, $result);
+        self::assertSame($sut->canVisitAllRooms($rooms), $result);
     }
 
     public static function dataProvider(): array
     {
         return [
-            [1, 1],
+            [[[1], [2], [3], []], true],
+            [[[1, 3], [3, 0, 1], [2], [0]], false],
         ];
     }
 }
