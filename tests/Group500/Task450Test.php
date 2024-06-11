@@ -4,24 +4,25 @@ declare(strict_types=1);
 
 namespace App\Tasks\Group500;
 
+use App\Model\TreeNode;
 use PHPUnit\Framework\TestCase;
 
 final class Task450Test extends TestCase
 {
-    /**
-     * @dataProvider dataProvider
-     */
-    public function test450(int $a, int $result): void
+    public function test450(): void
     {
         $sut = new Task450();
 
-        self::assertSame($a, $result);
-    }
+        $root = new TreeNode(
+            5,
+            new TreeNode(3, new TreeNode(2), new TreeNode(4)),
+            new TreeNode(6, null, new TreeNode(7)),
+        );
 
-    public static function dataProvider(): array
-    {
-        return [
-            [1, 1],
-        ];
+        $result = $sut->deleteNode($root, 3);
+
+        self::assertSame($result->left->val, 4);
+
+        self::assertSame($result->left->left->val, 2);
     }
 }
