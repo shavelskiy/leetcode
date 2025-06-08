@@ -4,24 +4,21 @@ declare(strict_types=1);
 
 namespace App\Tasks\Group200;
 
+use App\Model\TreeNode;
 use PHPUnit\Framework\TestCase;
 
 final class Task103Test extends TestCase
 {
-    /**
-     * @dataProvider dataProvider
-     */
-    public function test103(int $a, int $result): void
+    public function test103(): void
     {
         $sut = new Task103();
 
-        self::assertSame($a, $result);
-    }
+        $tree = new TreeNode(
+            3,
+            new TreeNode(9),
+            new TreeNode(20, new TreeNode(15), new TreeNode(7)),
+        );
 
-    public static function dataProvider(): array
-    {
-        return [
-            [1, 1],
-        ];
+        self::assertSame($sut->zigzagLevelOrder($tree), [[3], [20, 9], [15, 7]]);
     }
 }
