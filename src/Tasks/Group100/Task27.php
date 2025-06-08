@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Tasks\Group100;
 
 /**
- * 100/8.85
+ * 100/8.85.
  */
 final class Task27
 {
@@ -18,7 +18,7 @@ final class Task27
         $resultArr = [];
         foreach ($nums as $num) {
             if ($num !== $val) {
-                $result++;
+                ++$result;
                 $resultArr[] = $num;
             }
         }
