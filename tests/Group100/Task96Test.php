@@ -11,17 +11,19 @@ final class Task96Test extends TestCase
     /**
      * @dataProvider dataProvider
      */
-    public function test96(int $a, int $result): void
+    public function test96(int $n, int $result): void
     {
         $sut = new Task96();
 
-        self::assertSame($a, $result);
+        self::assertSame($sut->numTrees($n), $result);
     }
 
     public static function dataProvider(): array
     {
         return [
             [1, 1],
+            [3, 5],
+            [4, 14],
         ];
     }
 }
