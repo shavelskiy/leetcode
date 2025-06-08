@@ -8,20 +8,10 @@ use PHPUnit\Framework\TestCase;
 
 final class Task95Test extends TestCase
 {
-    /**
-     * @dataProvider dataProvider
-     */
-    public function test95(int $a, int $result): void
+    public function test95(): void
     {
         $sut = new Task95();
 
-        self::assertSame($a, $result);
-    }
-
-    public static function dataProvider(): array
-    {
-        return [
-            [1, 1],
-        ];
+        self::assertSame(count($sut->generateTrees(3)), 5);
     }
 }
