@@ -11,17 +11,20 @@ final class Task290Test extends TestCase
     /**
      * @dataProvider dataProvider
      */
-    public function test290(int $a, int $result): void
+    public function test290(string $pattern, string $s, bool $result): void
     {
         $sut = new Task290();
 
-        self::assertSame($a, $result);
+        self::assertSame($sut->wordPattern($pattern, $s), $result);
     }
 
     public static function dataProvider(): array
     {
         return [
-            [1, 1],
+            ['abba', 'dog dog dog dog', false],
+            ['abba', 'dog cat cat dog', true],
+            ['abba', 'dog cat cat fish', false],
+            ['aaaa', 'dag cat cat dog', false],
         ];
     }
 }
