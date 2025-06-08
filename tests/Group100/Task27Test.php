@@ -11,17 +11,18 @@ final class Task27Test extends TestCase
     /**
      * @dataProvider dataProvider
      */
-    public function test27(int $a, int $result): void
+    public function test27(array $nums, int $a, int $result): void
     {
         $sut = new Task27();
 
-        self::assertSame($a, $result);
+        self::assertSame($sut->removeElement($nums, $a), $result);
     }
 
     public static function dataProvider(): array
     {
         return [
-            [1, 1],
+            [[3, 2, 2, 3], 3, 2],
+            [[0, 1, 2, 2, 3, 0, 4, 2], 2, 5],
         ];
     }
 }

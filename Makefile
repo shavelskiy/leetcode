@@ -13,7 +13,7 @@ check-autoload:
 	composer dump-autoload --strict-psr
 
 code-style:
-	composer php-cs-fixer fix -- --allow-risky=yes
+	PHP_CS_FIXER_IGNORE_ENV=1 composer php-cs-fixer fix -- --allow-risky=yes
 
 test:
 	composer phpunit

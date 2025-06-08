@@ -19,8 +19,8 @@ final class Task1232
         $diff = [$coordinates[1][0] - $coordinates[0][0], $coordinates[1][1] - $coordinates[0][1]];
         for ($i = 2; $i < $n; ++$i) {
             if (
-                $diff[0] * ($coordinates[$i][1] - $coordinates[0][1]) !==
-                $diff[1] * ($coordinates[$i][0] - $coordinates[0][0])
+                $diff[0] * ($coordinates[$i][1] - $coordinates[0][1])
+                !== $diff[1] * ($coordinates[$i][0] - $coordinates[0][0])
             ) {
                 return false;
             }
