@@ -11,17 +11,19 @@ final class Task12Test extends TestCase
     /**
      * @dataProvider dataProvider
      */
-    public function test12(int $a, int $result): void
+    public function test12(int $a, string $result): void
     {
         $sut = new Task12();
 
-        self::assertSame($a, $result);
+        self::assertSame($sut->intToRoman($a, $result), $result);
     }
 
     public static function dataProvider(): array
     {
         return [
-            [1, 1],
+            [3749, 'MMMDCCXLIX'],
+            [58, 'LVIII'],
+            [1994, 'MCMXCIV'],
         ];
     }
 }
