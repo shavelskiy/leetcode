@@ -11,17 +11,19 @@ final class Task85Test extends TestCase
     /**
      * @dataProvider dataProvider
      */
-    public function test85(int $a, int $result): void
+    public function test85(array $matrix, int $result): void
     {
         $sut = new Task85();
 
-        self::assertSame($a, $result);
+        self::assertSame($sut->maximalRectangle($matrix, $result), $result);
     }
 
     public static function dataProvider(): array
     {
         return [
-            [1, 1],
+            [[['1', '0', '1', '0', '0'], ['1', '0', '1', '1', '1'], ['1', '1', '1', '1', '1'], ['1', '0', '0', '1', '0']], 6],
+            [[['0']], 0],
+            [[['1']], 1],
         ];
     }
 }
