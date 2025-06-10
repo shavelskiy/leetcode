@@ -4,24 +4,17 @@ declare(strict_types=1);
 
 namespace App\Tasks\Group200;
 
+use App\Model\TreeNode;
 use PHPUnit\Framework\TestCase;
 
 final class Task111Test extends TestCase
 {
-    /**
-     * @dataProvider dataProvider
-     */
-    public function test111(int $a, int $result): void
+    public function test111(): void
     {
         $sut = new Task111();
 
-        self::assertSame($a, $result);
-    }
+        $tree = new TreeNode(3, new TreeNode(9), new TreeNode(20, new TreeNode(15), new TreeNode(7)));
 
-    public static function dataProvider(): array
-    {
-        return [
-            [1, 1],
-        ];
+        self::assertSame($sut->minDepth($tree), 2);
     }
 }
