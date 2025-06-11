@@ -6,7 +6,7 @@ namespace App\Tasks\Group300;
 
 /**
  * 8.33/66.67.
- * https://leetcode.com/problems/search-a-2d-matrix-ii/description/?envType=problem-list-v2.
+ * https://leetcode.com/problems/search-a-2d-matrix-ii.
  */
 final class Task240
 {

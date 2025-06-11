@@ -6,7 +6,7 @@ namespace App\Tasks\Group100;
 
 /**
  * 64.89/85.50.
- * https://leetcode.com/problems/integer-to-roman/description.
+ * https://leetcode.com/problems/integer-to-roman.
  */
 final class Task12
 {

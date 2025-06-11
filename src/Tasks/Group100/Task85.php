@@ -6,7 +6,7 @@ namespace App\Tasks\Group100;
 
 /**
  * 100/100
- * https://leetcode.com/problems/maximal-rectangle/description.
+ * https://leetcode.com/problems/maximal-rectangle.
  */
 final class Task85
 {

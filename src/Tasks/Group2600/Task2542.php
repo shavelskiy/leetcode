@@ -8,7 +8,7 @@ use SplMinHeap;
 
 /**
  * 100/100
- * https://leetcode.com/problems/maximum-subsequence-score/description/?envType=study-plan-v2.
+ * https://leetcode.com/problems/maximum-subsequence-score.
  */
 final class Task2542
 {

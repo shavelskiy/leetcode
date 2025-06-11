@@ -6,7 +6,7 @@ namespace App\Tasks\Group100;
 
 /**
  * 98.95/92.63
- * https://leetcode.com/problems/merge-intervals/description.
+ * https://leetcode.com/problems/merge-intervals.
  */
 final class Task56
 {

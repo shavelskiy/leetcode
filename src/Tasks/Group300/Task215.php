@@ -7,7 +7,7 @@ namespace App\Tasks\Group300;
 use SplMaxHeap;
 
 /**
- * https://leetcode.com/problems/kth-largest-element-in-an-array/description/?envType=study-plan-v2.
+ * https://leetcode.com/problems/kth-largest-element-in-an-array.
  */
 final class Task215
 {

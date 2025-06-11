@@ -8,7 +8,7 @@ use App\Model\TreeNode;
 
 /**
  * 90.32/93.55
- * https://leetcode.com/problems/minimum-depth-of-binary-tree/description.
+ * https://leetcode.com/problems/minimum-depth-of-binary-tree.
  */
 final class Task111
 {

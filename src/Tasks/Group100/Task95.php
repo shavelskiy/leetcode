@@ -7,7 +7,7 @@ namespace App\Tasks\Group100;
 use App\Model\TreeNode;
 
 /**
- * https://leetcode.com/problems/unique-binary-search-trees-ii/description/?envType=problem-list-v2&envId=binary-tree.
+ * https://leetcode.com/problems/unique-binary-search-trees-ii.
  */
 final class Task95
 {

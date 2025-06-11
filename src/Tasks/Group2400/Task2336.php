@@ -8,7 +8,7 @@ use SplMinHeap;
 
 /**
  * 100/90
- * https://leetcode.com/problems/smallest-number-in-infinite-set/description/?envType=study-plan-v2.
+ * https://leetcode.com/problems/smallest-number-in-infinite-set.
  */
 final class Task2336
 {
