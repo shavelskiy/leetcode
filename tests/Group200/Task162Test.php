@@ -11,17 +11,18 @@ final class Task162Test extends TestCase
     /**
      * @dataProvider dataProvider
      */
-    public function test162(int $a, int $result): void
+    public function test162(array $nums, int $result): void
     {
         $sut = new Task162();
 
-        self::assertSame($a, $result);
+        self::assertSame($sut->findPeakElement($nums), $result);
     }
 
     public static function dataProvider(): array
     {
         return [
-            [1, 1],
+            [[1, 2, 3, 1], 2],
+            [[1, 2, 1, 3, 5, 6, 4], 5],
         ];
     }
 }
