@@ -11,17 +11,20 @@ final class Task216Test extends TestCase
     /**
      * @dataProvider dataProvider
      */
-    public function test216(int $a, int $result): void
+    public function test216(int $k, int $n, array $result): void
     {
         $sut = new Task216();
 
-        self::assertSame($a, $result);
+        self::assertSame($sut->combinationSum3($k, $n), $result);
     }
 
     public static function dataProvider(): array
     {
         return [
-            [1, 1],
+            [2, 18, []],
+            [3, 7, [[1, 2, 4]]],
+            [3, 9, [[1, 2, 6], [1, 3, 5], [2, 3, 4]]],
+            [4, 1, []],
         ];
     }
 }
