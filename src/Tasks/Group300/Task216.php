@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Tasks\Group300;
 
 /**
- * 100/0
+ * 100/100
  * https://leetcode.com/problems/combination-sum-iii.
  */
 final class Task216
@@ -21,9 +21,10 @@ final class Task216
 
         $result = [];
 
-        for ($i = $min + 1; $i < min($n, 9); ++$i) {
-            foreach ($this->combinationSum3($k - 1, $n - $i, $i) as $current) {
-                $result[] = [$i, ...$current];
+        while ($min < $n && $min < 9) {
+            ++$min;
+            foreach ($this->combinationSum3($k - 1, $n - $min, $min) as $current) {
+                $result[] = [$min, ...$current];
             }
         }
 
