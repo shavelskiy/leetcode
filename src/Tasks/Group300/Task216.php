@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Tasks\Group300;
 
 /**
+ * 100/0
  * https://leetcode.com/problems/combination-sum-iii.
  */
 final class Task216
